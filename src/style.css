@@ -1,0 +1,393 @@
+body {
+    font-size: 10pt;
+    font-family: Helvetica, Arial, SunSans-Regular, Sans-Serif;
+    color:#333333;
+/*    background-color:#E0FFF0 ;*/
+    
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+body>header h1>a {
+    font-size: 24pt;
+    color: black;
+    text-decoration: none;
+}
+
+body>header h4 {
+    margin-top: -10px;
+}
+
+header{
+
+    max-width: 800px;
+    min-width: 200px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color:white;
+    padding-bottom: 0.5px;
+
+}
+
+
+h1,h2,h3,h4 {
+    width: 100%;
+    min-width: 200px;
+}
+
+h2{
+	font-size: 15pt;
+
+}
+
+
+hr {
+    margin-left: 0;
+    padding-left: 0;
+	width: 100%;
+	color: #2D3B1F;
+	background-color: #2D3B1F;
+	max-width: 800px;
+	min-width: 200px;
+}
+
+pre {
+  /*  background-color: #E0FFE0;*/
+    margin-left: 25px;
+    padding: 5px;
+    width: 80%;
+}
+
+code {
+    background-color: #E0FFE0;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+/*pre {
+    background-color: #E0FFE0;
+    margin-left: 30px;
+    padding: 5px;
+    width: 80%;
+}*/
+
+
+table {
+    vertical-align: top;
+    border: none;
+}
+
+#cell1 {
+    position:absolute; 
+    top:10px;
+    background:blue; 
+    vertical-align:top; 
+    left:100px;
+}
+
+#cell2 {
+    height:200px; 
+    background:blue; 
+    display:table-cell; 
+    vertical-align:middle; 
+    color:white;
+}
+
+td {
+    padding-left: 20px;
+    vertical-align: top;
+}
+
+a:hover {
+    color: #696969;
+}
+
+main {
+
+/*	width: 100%; */
+	background-color:white;
+	min-width: 200px;
+	max-width: 800px;
+	min-height: 500px;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	margin-top: 50px;
+/*	margin-right: 150px;*/
+	display: block;
+}
+
+nav {
+/*	float: left;*/
+	clear: both;
+	display: inline;
+	width:100%;
+	min-width:200px;
+	max-width: 800px;
+/*	margin-bottom: 10px;*/
+/*	min-width: 150px;*/
+	display: block;
+	margin-left:0px;
+    	padding-left:0px;
+}
+
+nav li {
+    float:left;
+    list-style:none;
+}
+
+nav a,
+nav a:visited,
+nav a:active{
+
+    font-size: 12pt;
+    display:block;
+    padding-top:4px;
+    padding-left:29.5px;
+    padding-right:29.5px;
+    padding-bottom:4px;
+    font-weight:bold;
+    color: white;
+    background-color: #4D5C4D;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+
+	background-color: #1F231F;
+}
+
+
+body#home a#homenav,
+body#about a#aboutnav,
+body#collab a#collabnav,
+body#project a#projectnav,
+body#scrap a#scrapnav,
+body#contact a#connav {
+color: white;
+background-color: #1F231F;
+}
+
+
+
+
+
+footer {
+	clear: both;
+	width: 100%;
+}
+
+article {
+	margin: 10px;
+}
+
+article h2>a,
+article h2>a:visited,
+article h2>a:active {
+    text-decoration: none;
+    color: black;
+}
+
+article h2>a:hover {
+    color: #696969;
+}
+
+article .entry {
+	margin-left: 15px;
+	padding: 10px;
+}
+
+article .entry img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+article header span {
+	margin-top: -10px;
+	margin-bottom: -3px;
+	margin-left: 5px;
+}
+
+article header h2 {
+    margin-bottom: 3px;
+}
+
+
+
+section address {
+    margin-left: 15px;
+}
+
+/* scrapbook elements */
+
+
+scrap{
+	display:inline;
+	clear:left;
+}
+
+scrap previewbox{
+	background-color: #4D5C4D;
+	display: block;
+	width: 200px;
+	height: 170px;
+}
+
+
+scrap previewbox txt a,
+scrap previewbox txt a:visited,
+scrap previewbox txt a:active {
+    color: white;
+    margin-top: 8px;
+    text-decoration:none;
+}
+
+
+
+scrap previewbox a:hover{
+	background-color: black;
+}
+
+scrap previewbox txt{
+	display: block;
+	padding: 8px;
+	font-size: 9pt;
+	font-weight: bold;
+}
+
+
+
+scrap previewbox txt a:hover{
+    color: #E6E6E6;
+}
+
+scrap headerbox{
+    display:block;
+    min-width: 200px;
+
+}
+
+scrap headerbox h2>a,
+scrap headerbox h2>a:visited,
+scrap headerbox h2>a:active {
+    color:black;
+    text-decoration: none;
+}
+
+scrap headerbox h2>a:hover{
+    color: #696969;
+}
+
+/*collab elements begin*/
+collab{
+	display:block;
+	width:95%;
+}
+
+collab a,
+collab a:visited,
+collab a:active{
+	color: white;
+	background-color: #4D5C4D;
+	text-decoration: none;
+}
+
+
+collab a:hover{
+	background-color: #1F231F;
+	color: white;
+}
+
+collab table{
+	background-color:inherit;
+	table-layout: fixed;
+}
+
+
+collab td,
+collab tr{
+    	vertical-align: middle;
+}
+/*project elements*/
+
+project{
+	width:360px;
+	padding:0px;
+	margin-bottom: 2%;
+	height: 160px;
+	background-color:white;
+}
+
+project a,
+project a:visited,
+project a:active{
+	color: white;
+	background-color: #4D5C4D;
+	text-decoration: none;i
+	padding 2px;
+}
+
+project img{
+	display:block;
+}
+
+project a:hover{
+	background-color: #1F231F;
+	color: white;
+}
+
+project table{
+	border-collapse:collapse;
+	background-color:inherit;
+	table-layout: fixed;
+	border: 0px;
+	margin:0,0,0,0;
+	padding: 0px;
+}
+project td,
+project tr{
+	padding:0px;
+    	vertical-align: middle;
+}
+
+/*other-project elements*/
+
+
+other-project{
+	width:175px;
+	margin-bottom: 2%;
+	height: 240px;
+	background-color:white;
+}
+
+other-project a,
+other-project a:visited,
+other-project a:active{
+    	color:#1F231F;
+	text-decoration: none;i
+	padding 2px;
+}
+
+other-project img{
+	display:block;
+	margin-bottom: 5px;
+}
+
+other-project a:hover{
+	color: #4D5C4D;
+}
+
+other project table{
+	background-color:inherit;
+	table-layout: fixed;
+}
+
+other-project td,
+other-project tr{
+	padding:0px;
+    	vertical-align: middle;
+}

@@ -1,0 +1,13 @@
+---
+layout: post
+title: x-msg Telephony Server
+category: Projects
+author: Cliff Hammett
+
+excerpt:  The x-msg server is a many-to-many text messaging system for use in sex work activism. 
+
+---
+
+The x-msg telephony server was developed as part of the x-msg project.  It was developed to respond to the most prominent social problems that the women in the industry face. It meets the need for anonymity, considers language barriers, and uses the most common, but private, technology: the mobile phone.
+
+Its premise is simple: a piece of amateur-coded open source software that redirects text messages to its networks of sex work activists, while only costing them the price of a single text message. The system operates via a cheap DIY telephony server and uses a second hand mobile phone with a Pay As You Go “unlimited” texts service. The phone is connected via a USB cable to a recycled computer that operates the server.

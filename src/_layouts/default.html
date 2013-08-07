@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+        <link rel="stylesheet" href="/style.css" /> 
+        <meta name="description" content="{{site.description}}"/>
+        <meta name="author" content="{{site.author}}"/>
+        <link rel="author" href="humans.txt"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/feed.xml" />
+
+        <link rel="stylesheet" href="/resources/fontello/css/fontello.css">
+        <link rel="stylesheet" href="/resources/fontello/css/animation.css">
+        <link rel="stylesheet" href="/resources/css/gridstyle.css">
+        <link rel="stylesheet" href="/resources/css/grid.css"> 
+        <!--[if IE 7]><link rel="stylesheet" href="/resources/fontello/css/fontello-ie7.css"><![endif]-->
+    </head>
+
+    <body>
+        <header>
+            <hgroup>
+            <h1><a href="/">{{ site.name }}</a></h1>
+                <h4>{{ site.description }}</h4>
+		<nav>
+
+			    
+				<li><a href="/" id="homenav">Home</a></li>
+				<li><a href="/about" id="aboutnav">About</a></li>
+				<li><a href="/collaborations" id="collabnav">Collaborations</a></li>
+				<li><a href="/projects" id="projectnav">Projects</a></li>
+				<li><a href="/scrapbook" id="scrapnav">Scrapbook</a></li>
+				<li><a href="/contact" id="connav">Contact</a></li>
+			   
+
+		</nav>
+            </hgroup>	
+        </header>
+
+
+        <main>
+
+            {{ content }}
+
+        </main>
+
+        <footer>
+            <p></p>
+        </footer>
+
+    </body>
+
+</html>

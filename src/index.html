@@ -1,0 +1,35 @@
+---
+layout: default
+title: Home
+---
+
+<body id="home">
+<!-- Show last 5 posts here -->
+
+<table>
+   <tr>
+     <td width = 70%>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt eget diam vitae rhoncus. Nulla eget turpis feugiat, cursus velit eget, tristique leo. Nunc eu purus facilisis, dictum purus sit amet, viverra sem. Aenean lobortis metus in risus auctor fringilla. Ut consequat libero sem, non gravidai ligula pretium a. Nunc in lacinia lorem, nec interdum metus. Duis porta enim in felis gravida faucibus. Nullam semper nunc in ipsum aliquam mattis. Aliquam malesuada posuere ligula a facilisis. Pellentesque risus enim, egestas et aliquam semper, dignissim at libero. Suspendisse ultrices arcu at nulla egestas, quis aliquet lacus pellentesque. Morbi sit amet felis vel sapien pharetra tincidunt. Donec odio sapien, tempor ut leo vitae, ultrices commodo tortor.
+	</p>
+	<p>
+Mauris ultricies dapibus tempus. Nam et pretium lectus, in laoreet nulla. Phasellus sed risus tellus. Vestibulum interdum bibendum placerat. Aenean venenatis accumsan nisl a dapibus. Maecenas non erat vel massa vehicula vulputate. Duis tempor elit ac est ornare consequat. Sed dictum mi id pretium rutrum. 
+	</p>
+     </td>
+     <td width = 180px>
+	<h3>Ongoing Projects</h3>
+	{% for post in site.categories.ongoing-projects limit: 2  %}
+	  <other-project class='other-projects grid_18'> 
+            <a href="{{ post.url }}">
+               <img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" width=170px >  
+               <strong>{{ post.title }}</strong>
+               </br>{{ post.excerpt }}
+            </a>
+         </other-project>
+	{% endfor %}
+	<footer>
+		<a href="/projects">More</a>
+	</footer>
+     </td>
+    </tr>
+</table>
+</body>
