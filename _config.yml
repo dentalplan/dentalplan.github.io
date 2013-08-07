@@ -23,6 +23,7 @@ category_dir: /cat/
 #baseurl: http://localhost:4000
 
 source: ./src
+destination: ./site
 
 
 #### Under the Hood Stuff #####
