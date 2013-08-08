@@ -7,6 +7,8 @@ author: Cliff Hammett
 excerpt: Rebooting Computing a response to the scrapping of the ICT curriculum and a renewed focus on teaching programming
 thumbimg: disp_reboot.jpg
 thumbalt: The hack day at Metal in Southend on Sea
+headerimg: disp_reboot.jpg
+headeralt: The hack day at Metal in Southend on Sea
 ---
 Rebooting Computing a response to the scrapping of the ICT curriculum and a renewed focus on teaching programming. 
 It is a partnership between Southend Education Trust, Digital Exploration Centre, YoHa and Goldsmiths’ Centre for Cultural Studies in London.

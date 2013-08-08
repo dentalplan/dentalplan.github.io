@@ -7,6 +7,8 @@ author: Cliff Hammett
 excerpt: Bleaching. Sucking. Feeding. Clocking. Scouring. Tuning. 
 thumbimg: disp_ebtk.jpg
 thumbalt: Works from the Everything but the Kitchen exhibition at Harts Lane Studios
+headerimg: disp_ebtk.jpg
+headeralt: Works from the Everything but the Kitchen exhibition at Harts Lane Studios
 
 ---
 *Bleaching. Sucking. Feeding. Clocking. Scouring. Tuning.*
