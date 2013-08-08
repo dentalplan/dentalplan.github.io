@@ -2,14 +2,17 @@
 layout: default
 ---
 <body id="{{ page.category }}-post">
-<article>
-        <header>
-            <h1>{{ page.title }}</h1>
-        </header>
-        <div class="entry">{{ content }}</div>
+    
+    {% if page.headerimg and page.headerimg != "" %}
+       	<img src="/resources/img/{{ page.headerimg }}" alt="{{ page.headeralt }}" width=97%></a>
+    {% endif %}
 
-	{{ page.category }}-post
+    <article>
+	 <h1>{{ page.title }}</h1>
+       <div class="entry">
+        {{ content }}
+	</div>
         <footer><!-- additional info --></footer>
 
-</article>
+    </article>
 </body>

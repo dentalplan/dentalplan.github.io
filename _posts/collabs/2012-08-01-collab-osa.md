@@ -5,7 +5,11 @@ category: Collaborations
 author: Cliff Hammett
 
 excerpt: The Open Systems Association is an allotment society for the critically curious and the technologically disaffected. 
+thumbimg: disp_osa.jpg
+thumbalt: OSA activities
 
+headerimg: disp_osa.jpg
+headeralt: OSA activities
 ---
 The [Open Systems Association](http://www.opensystem.org.uk) is an allotment society for the critically curious and the technologically disaffected. Based out of the Centre for Cultural Studies, Goldsmiths, it develops experimental methodologies to expose, share and engage with the complex ecologies, brutal control systems and intimate technologies that surround and envelop us.
 

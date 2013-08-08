@@ -2,8 +2,6 @@ body {
     font-size: 10pt;
     font-family: Helvetica, Arial, SunSans-Regular, Sans-Serif;
     color:#333333;
-/*    background-color:#E0FFF0 ;*/
-    
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -22,13 +20,14 @@ img{
     border-width: 0;
 }
 
+/*overal Wrapper for website*/
 wrapper{
 	display:block;
+	background-color: white;
 	max-width: 800px;
 	min-width: 200px;
 	margin-left: auto;
 	margin-right: auto;
-
 }
 
 header{
@@ -90,21 +89,6 @@ table {
     border: none;
 }
 
-#cell1 {
-    position:absolute; 
-    top:10px;
-    background:blue; 
-    vertical-align:top; 
-    left:100px;
-}
-
-#cell2 {
-    height:200px; 
-    background:blue; 
-    display:table-cell; 
-    vertical-align:middle; 
-    color:white;
-}
 
 td {
     padding-left: 20px;
@@ -131,13 +115,23 @@ main {
 	display: block;
 }
 
+menublock{
+
+	display:block;
+	background-color: #4D5C4D;
+	width: 100%;
+
+
+}
+
+
 nav {
 /*	float: left;*/
 	clear: both;
 	display: inline;
 	width:100%;
 	min-width:200px;
-	max-width: 800px;
+	max-width: 780px;
 /*	margin-bottom: 10px;*/
 /*	min-width: 150px;*/
 	display: block;
@@ -157,8 +151,8 @@ nav a:active{
     font-size: 12pt;
     display:block;
     padding-top:4px;
-    padding-left:29.5px;
-    padding-right:29.5px;
+    padding-left:30px;
+    padding-right:30px;
     padding-bottom:4px;
     font-weight:bold;
     color: white;
@@ -183,7 +177,9 @@ body#contact a#connav {
 	background-color: #1F231F;
 }
 
-
+body#Collaborations-post a#collabnav,
+body#Scrap-post a#scrapnav,
+body#Complete-Projects-post a#projectnav,
 body#Ongoing-Projects-post a#projectnav{
 	background-color: white;
 	color: #1F231F;
@@ -203,6 +199,7 @@ footer {
 
 article {
 	margin: 10px;
+	min-width: 200px;
 }
 
 article h2>a,
@@ -307,7 +304,7 @@ scrap headerbox h2>a:hover{
 /*collab elements begin*/
 collab{
 	display:block;
-	width:95%;
+	width:97%;
 }
 
 collab a,
