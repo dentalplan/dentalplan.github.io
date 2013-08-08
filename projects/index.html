@@ -39,7 +39,11 @@ title: Projects
   <!--  <div class='other-projects clearfix'> -->
         {% for post in site.categories.complete-projects %}
  	<other-project class='other-projects grid_18'> 
-	<a href="{{ post.url }}">
+	{% if post.overrideurl and post.overrideurl != "" %}
+	   <a href="{{ post.overrideurl }}">
+        {% else %}
+	   <a href="{{ post.url }}">
+	{% endif %}
 			<img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" width=170px >	
         	    <strong>{{ post.title }}</strong>
             	    </br>{{ post.excerpt }}
@@ -52,4 +56,3 @@ title: Projects
 
 
 
-</body>
