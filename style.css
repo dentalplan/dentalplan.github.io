@@ -18,6 +18,19 @@ body>header h4 {
     margin-top: -10px;
 }
 
+img{
+    border-width: 0;
+}
+
+wrapper{
+	display:block;
+	max-width: 800px;
+	min-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
 header{
 
     max-width: 800px;
@@ -166,12 +179,21 @@ body#collab a#collabnav,
 body#project a#projectnav,
 body#scrap a#scrapnav,
 body#contact a#connav {
-color: white;
-background-color: #1F231F;
+	color: white;
+	background-color: #1F231F;
 }
 
 
+body#Ongoing-Projects-post a#projectnav{
+	background-color: white;
+	color: #1F231F;
+}
 
+
+body#Ongoing-Projects-post a#projectnav:hover{
+	color: white;
+	background-color: #1F231F;
+}
 
 
 footer {
