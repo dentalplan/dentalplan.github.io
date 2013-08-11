@@ -206,7 +206,7 @@ article h2>a,
 article h2>a:visited,
 article h2>a:active {
     text-decoration: none;
-    color: black;
+    color: #1F231F;
 }
 
 article h2>a:hover {
@@ -267,7 +267,7 @@ scrap previewbox txt a:active {
 
 
 
-scrap previewbox a:hover{
+scrap previewbox txt a:hover{
 	background-color: black;
 }
 

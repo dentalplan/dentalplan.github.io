@@ -19,17 +19,18 @@ title: Scrapbook
 		<table>
 		        <td>
 
-	 <!--		<a href="{{post.url}}"> -->
+	 -		<a href="{{post.url}}">
 			    <previewbox>
-				<a href="{{post.url}}"><img src = "{{post.thumbimg}}" alt = "{{post.thumbalt}}"></a>
+				{% if post.thumbimg and post.thumbimg != "" %}
+					<a href="{{post.url}}"><img src = "{{post.thumbimg}}" alt = "{{post.thumbalt}}"></a>
+				{% endif}
 			         <txt>
 				         <a href="{{post.url}}">{{ post.excerpt }}</a>
 				 </txt>
 
 			    </previewbox>
-	<!--		</a> -->
 			</td>
-			
+			</a>	
 			<td>
 		            <headerbox>
 	 			<h2><a href="{{post.url}}">{{ post.title }}</a></h2>
