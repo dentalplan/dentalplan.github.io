@@ -69,7 +69,6 @@ hr {
 }
 
 pre {
-  /*  background-color: #E0FFE0;*/
     margin-left: 25px;
     padding: 5px;
     width: 80%;
@@ -106,7 +105,6 @@ a:hover {
 
 main {
 
-/*	width: 100%; */
 	background-color:white;
 	min-width: 200px;
 	max-width: 800px;
@@ -116,7 +114,6 @@ main {
 	padding-right: 5px;
 	padding-bottom: 10px;
 	margin-top: 50px;
-/*	margin-right: 150px;*/
 	display: block;
 }
 
@@ -281,9 +278,6 @@ scrap a:active{
 	padding 2px;
 }
 
-scrap previewbox{
-
-}
 
 
 scrap img{
@@ -323,6 +317,7 @@ scrap a:active>table {
 scrap a:hover>table {
 	background-color:black;
 }
+
 /*collab elements begin*/
 collab{
     display:block;
@@ -389,6 +384,7 @@ project table{
 	margin:0,0,0,0;
 	padding: 0px;
 }
+
 project td,
 project tr{
 	padding:0px;
@@ -409,7 +405,7 @@ other-project a,
 other-project a:visited,
 other-project a:active{
     	color:#1F231F;
-	text-decoration: none;i
+	text-decoration: none;
 	padding 2px;
 }
 
