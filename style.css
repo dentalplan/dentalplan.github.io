@@ -18,7 +18,7 @@ hgroup{
 }
 
 body>header h4 {
-    margin-top: -10px;
+    margin-top: 10px;
 }
 
 /*Image settings*/
@@ -118,15 +118,20 @@ main {
 	display: block;
 }
 
-menublock{
-
-	display:block;
+nav table{
 	background-color: #4D5C4D;
-	width: 100%;
-
-
+	margin: 0,0,0,0;
+	padding: 0;
+	border: none;
+	border-collapse:collapse;
 }
 
+nav td,
+nav tr{
+	border:0px;
+	padding:0px;
+	margin:0px;
+}
 
 nav {
 /*	float: left;*/
@@ -145,6 +150,8 @@ nav {
 nav li {
     float:left;
     list-style:none;
+    margin:0;
+    padding:0;
 }
 
 nav a,
@@ -219,6 +226,7 @@ article h2>a:hover {
 
 article .entry {
     margin-left: 15px;
+    margin-right: 15px;
     padding: 5px;
 }
 
@@ -239,9 +247,17 @@ article header h2 {
 }
 
 
+section img {
+    display: block;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    width: 400px;
+}
 
-section address {
-    margin-left: 15px;
+section {
+    margin-left: 0px;
 }
 
 /* scrapbook elements */
@@ -274,8 +290,14 @@ scrap img{
 	margin-bottom: 5px;
 }
 
-scrap a:hover{
+scrap a,
+scrap a:visited,
+scrap a:active {
 	color: #4D5C4D;
+}
+
+scrap a:hover{
+        color: #1F231F;
 }
 
 scrap table{
@@ -293,6 +315,7 @@ scrap a>table,
 scrap a:visited>table,
 scrap a:active>table {
 	font-size: 9pt;
+	font-family: gill-sans;
 	color: white;
 }
 
