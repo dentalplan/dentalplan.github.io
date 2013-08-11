@@ -8,7 +8,9 @@ excerpt: Disruptions to the discreteness of the turn mechanism in chess.
 thumbimg: thumb_anomie2.jpg
 thumbal: the card game 'anomie' in play
 ---
-
+![Temporal errant game experiments](/resources/img/project_errantgaming1.jpg)
+![Temporal errant game experiments](/resources/img/project_errantgaming2.jpg)
+![Temporal errant game equipment](/resources/img/project_errantgaming3.jpg)
 Anomie is a disruptive card game, inspired by the concept of the joke outlined by Paolo Virno and by the troubling political philosophy of Carl Schmitt.  The most important rule concerns the joker.  When played, this allowed the player to take a completely free move, ignoring all the other rules of the game. The joker, by creating a zone of anomie but without abolishing the game structure itself, creates a state of exception within the game, if only for a single turn.  The results are chaotic, and the focus of participants often shifts from attempts at victory to who can use their brief moment of power in the most amusing, clever or brutal fashion.
 
 Tempo is series of chess variants where the temporal form of the turn within chess is subject to repeated disruption.  In most instances this creates brief windows where a player can take as many turns as they wish, disrupting the discreteness of the turn mechanism upon which chess depends.  Here are some versions of Tempo:

@@ -3,8 +3,7 @@ body {
     font-family: Helvetica, Arial, SunSans-Regular, Sans-Serif;
     color:#333333;
     padding-left: 5%;
-    padding-right: 5%;
-}
+    p}
 
 hgroup h1>a {
     font-size: 30pt;
@@ -48,7 +47,6 @@ header{
 
 }
 
-
 h1,h2,h3,h4 {
     width: 100%;
     min-width: 200px;
@@ -56,9 +54,7 @@ h1,h2,h3,h4 {
 
 h2{
 	font-size: 15pt;
-
 }
-
 
 hr {
     margin-left: 0;
@@ -83,19 +79,10 @@ code {
     padding-right: 3px;
 }
 
-/*pre {
-    background-color: #E0FFE0;
-    margin-left: 30px;
-    padding: 5px;
-    width: 80%;
-}*/
-
-
 table {
     vertical-align: top;
     border: none;
 }
-
 
 td {
     padding-left: 20px;
@@ -214,7 +201,8 @@ footer {
 }
 
 article {
-    margin: 10px;
+    margin: 5px;
+    margin-top: 0px;
     min-width: 200px;
 }
 
@@ -231,24 +219,23 @@ article h2>a:hover {
 
 article .entry {
     margin-left: 15px;
-    padding: 10px;
+    padding: 5px;
 }
 
 article .entry img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width: 400px;
 }
 
 article header span {
-    margin-top: -10px;
-    margin-bottom: -3px;
     margin-left: 5px;
 }
 
 article header h2 {
-    margin-bottom: 3px;
 }
 
 
