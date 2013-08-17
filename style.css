@@ -195,11 +195,6 @@ body#Ongoing-Projects-post a#projectnav{
 }
 
 
-body#Ongoing-Projects-post a#projectnav:hover{
-	color: white;
-	background-color: #1F231F;
-}
-
 
 footer {
     clear: both;
