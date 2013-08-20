@@ -39,7 +39,7 @@ title: Projects
         {% for post in site.categories.complete-projects %}
  	<other-project class='other-projects grid_18'> 
 	{% if post.overrideurl and post.overrideurl != "" %}
-	   <a href="{{ post.overrideurl }}">
+	   <a href="{{ post.overrideurl }}" target="_blank">
         {% else %}
 	   <a href="{{ post.url }}">
 	{% endif %}
