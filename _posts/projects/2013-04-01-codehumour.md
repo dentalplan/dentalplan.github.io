@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Coded Humour
-category: Complete-Projects
+category: Ongoing-Projects
 author: Cliff Hammett
 
 excerpt:  Explorations of software structured like jokes. Part of the 'Jokes in Systems' series.
 thumbimg: thumb_codedhumour.jpg
-thumbal: A visitor interacts with the buggy clock system
+thumbal: Part of the Action Iguana software
 ---
 
 ![The buggy software Action Iguana](/resources/img/project_codedhumour.jpg)
