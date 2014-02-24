@@ -2,8 +2,10 @@ body {
     font-size: 10pt;
     font-family: Helvetica, Arial, SunSans-Regular, Sans-Serif;
     color:#333333;
-    padding-left: 5%;
+    margin-left: 5%;
 }
+
+
 
 hgroup h1>a {
     font-size: 30pt;
@@ -89,6 +91,31 @@ td {
     padding-left: 20px;
     vertical-align: top;
 }
+
+currvit{
+    clear: both;
+    display: block;
+    max-width: 780px;
+}
+
+currvit table{
+    vertical-align: top;
+    border: none;
+}
+
+currvit table td {
+    padding-left: 8px;
+    text-align: justify;
+    padding-right: 15px;
+    vertical-align: top;
+}
+
+currvit h3 {
+    padding-left: 5px;
+    margin-bottom: 3px;
+    padding-bottom: 0px;
+}
+
 
 a,
 a:active{
@@ -208,6 +235,8 @@ subfooter{
 	display: block;
 
 }
+
+
 
 article {
     margin: 5px;
@@ -433,3 +462,8 @@ other-project tr{
 	padding:0px;
     	vertical-align: middle;
 }
+
+.rightbar{
+	float:right;
+}
+
