@@ -5,7 +5,7 @@ category: Complete-Projects
 author: Cliff Hammett
 
 excerpt: A text on Hooke's Telegraph System for an exhibition at Transmediale. 
-overrideurl: http://yoha.co.uk/sites/yoha.co.uk/evilmedia/#id59
+overrideurl: http://yoha.co.uk/node/709
 thumbimg: thumb_evilmedia.jpg
 thumbalt: Clipboard with text at Evil Media exhibitiion
 ---
