@@ -41,6 +41,16 @@
     margin-right: 1%;
 }
 
+.spacedgrid{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.indentedgrid{ 
+    display:block;
+    padding-left: 24px;
+}
+
 /* Grid >> Children (Alpha ~ First, Omega ~ Last)
  * ----------------------------------------------------------------------------------------------------*/
 

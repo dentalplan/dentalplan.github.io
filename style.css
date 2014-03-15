@@ -28,6 +28,18 @@ img{
     border-width: 0;
 }
 
+poem p{
+    padding-bottom: 0px;
+}
+
+poem p.indent01{
+    padding-left: 15px;
+}
+
+poem p.indent02{
+    padding-left: 30px;
+}
+
 /*overal Wrapper for website*/
 wrapper{
 	display:block;
@@ -296,10 +308,11 @@ section {
 
 
 scrap{
+	display:block;
 	width:210px;
 	margin-bottom: 2%;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
 	height: 260px;
 	background-color:white;
 }
@@ -466,4 +479,5 @@ other-project tr{
 .rightbar{
 	float:right;
 }
+
 

@@ -11,14 +11,13 @@ title: Scrapbook
 		want to say blog, but it sort of is.
 	</p>
 	</article>
-
-<div class="content grid_20">
+<div class="indentedgrid">
 
   <!--  <div class='other-projects clearfix'> -->
 
 	{% for post in site.categories.scrap %}
 
- 	<scrap class='scrap grid_18'> 
+ 	<scrap class='scrap grid_18 spacedgrid'> 
 	   <a href="{{ post.url }}">
 		{% if post.thumbimg and post.thumbimg != "" %}
 			<img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" >	
@@ -36,9 +35,7 @@ title: Scrapbook
         {% endfor %}
 
 <!--    </div>  -->
-
 </div>
-
 	
 
 </body>
