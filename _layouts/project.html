@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<body id="{{ page.category }}-project">
+    
+    {% if page.headerimg and page.headerimg != "" %}
+       	<img src="/resources/img/{{ page.headerimg }}" alt="{{ page.headeralt }}" width=97%></a>
+    {% endif %}
+    
+    <article>
+	 <h1>{{ page.title }}</h1>
+       <div class="entry">
+        {{ content }}
+	</div>
+        <footer><!-- additional info --></footer>
+
+    </article>
+
+
+{% if page.projectid %}
+    <h2>{{ page.title }} scrapbook</h2>
+{% endif %}
+<div class="indentedgrid">
+ 
+   <!--  <div class='other-projects clearfix'> -->
+ 
+         {% for post in site.categories.scrap %}
+ 
+	   {% if post.relatedproject contains {{page.projectid}} %}
+             <scrap class='scrap grid_18 spacedgrid'>
+                <a href="{{ post.url }}">
+                     {% if post.thumbimg and post.thumbimg != "" %}
+                             <img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" >       
+                     {% else %}
+                             <table width = "200px" height = "170px"><tr><td>
+                                     {{ post.excerpt }}
+                             </td><tr></table>
+                     {% endif %}
+                     <strong>{{ post.title }}</strong>
+                     </br><span class="date"><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span>
+                </a>
+ 
+              </scrap>
+           {% endif %}
+         {% endfor %}
+ 
+ <!--    </div>  -->
+ </div>
+
+
+
+</body>
