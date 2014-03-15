@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: project
 title: Errant Gaming
 category: Complete-Projects
 author: Cliff Hammett
+projectid: errantgame
 
 excerpt: Generative disruptions to game mechanisms. Part of the 'Jokes in Systems' series.
 thumbimg: thumb_anomie2.jpg

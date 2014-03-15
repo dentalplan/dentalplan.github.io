@@ -4,6 +4,7 @@ title: The temporal politics of the joke
 category: Scrap
 author: Cliff Hammett
 
+relatedproject: errantgame, clockexcept
 excerpt: I began to look into the history of automata. I was partciularly interested in a chess playing automaton created in the eighteenth century.  I was directed to it by a reference in Walter Benjamin's first thesis on the philosophy of history ... 
 
 ---

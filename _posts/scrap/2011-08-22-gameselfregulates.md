@@ -4,6 +4,7 @@ title: The game as self-regulating system
 category: Scrap
 author: Cliff Hammett
 
+relatedproject: errantgame
 excerpt:  As I continued with my research, it became clearer that, on a number of levels, it was possible to conceive of the games I had constructed as self-regulating systems.  Rather than viewing the construction of fairness as an intervention from outside...
 ---
 

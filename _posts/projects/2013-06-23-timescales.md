@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: project
 title: Time Scales
 category: Ongoing-Projects
 author: Cliff Hammett
+projectid: timescales
 
 excerpt:  A set of experiments that explore time as a relationship between physical processes. 
 thumbimg: thumb_timescales.jpg

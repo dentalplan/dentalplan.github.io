@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: project
 title: A Clockwork Exception
 category: Complete-Projects
 author: Cliff Hammett
+projectid: clockexcept
 
 excerpt:  A buggy clock pulls the viewer into its own self-regulation. Part of the 'Jokes in Systems' series.
 thumbimg: thumb_jokesinsys.jpg

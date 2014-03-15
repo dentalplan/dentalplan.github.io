@@ -4,7 +4,7 @@ title: Timescales experiment 01
 category: Scrap
 author: Cliff Hammett
 
-excerpt:
+relatedproject: timescales
 thumbimg: thumb_timescalesexexperiment1.jpg
 thumbalt: Fragment of a relational time graph
 headerimg: disp_timescalesexperiment1.png
