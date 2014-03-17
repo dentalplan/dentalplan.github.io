@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: project
 title: Coded Humour
 category: Ongoing-Projects
 author: Cliff Hammett
+projectid: codedhumour
 
 excerpt:  Explorations of software structured like jokes. Part of the 'Jokes in Systems' series.
 thumbimg: thumb_codedhumour.jpg

@@ -18,7 +18,7 @@ _A [censorship poem](http://www.everypoet.org/pffa/showthread.php?77841-Jon-s-Se
 ```
 1. a predefined exception:
 trapped and raised by the underlying run time machine
-error: failure of a run-time check on constraint</span>
+error: failure of a run-time check on constraint
 				zero right of a division
 	error: failure of a run-time check on language
 				normally a return statement transmits
