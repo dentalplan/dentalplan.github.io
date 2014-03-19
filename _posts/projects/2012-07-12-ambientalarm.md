@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ambient Alarm Clock
+title: Ambient Alarm Clock &raquo;
 category: complete-projects
 author: Cliff Hammett
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text for YoHa's 'Evil Media Distrubtion Centre'
+title: Text for YoHa's 'Evil Media Distrubtion Centre' &raquo;
 category: Complete-Projects
 author: Cliff Hammett
 
