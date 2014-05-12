@@ -14,7 +14,7 @@ A year or so ago, regular radio listeners may have noticed some adverts on the a
 
 Seriously though, I loved that slogan. I was grateful every time my radio alarm spat it out.  I wanted to open a cloud-based MS Word document, type it out, print it (possibly in a different location to where I wrote it) and pin it above my desk workstation.  I loved it because every time I heard it made me want to howl with FUCKING RAGE.  The idea that any single software suite (let alone one created by Microsoft) could fulfil the desires (let's not say needs, no one _needs_ office software) of people with diverse bodies, histories, relations to the world is laughable, beyond ridiculous, and yet time and time again the corporate software industry gets away with spewing this drivel.
 
-But _seriously seriously_, I do love it, all of it, because it stops me from forgetting how, behind the smokescreen of accessibility settings and personal preferences, much modern software creates a 'you' - in the form of a 'user' – which carries a whole set of assumptions about who this person is and what they want to use a computer for.  It creates a band of possible activity (office worker, art worker, internet browser) and then proceeds to celebrate how fabulously unique you are within the narrow little strip they've provided for your existence. [1][note1]
+But _seriously seriously_, I do love it, all of it, because it stops me from forgetting how, behind the smokescreen of accessibility settings and personal preferences, much modern software creates a 'you' - in the form of a 'user' – which carries a whole set of assumptions about who this person is and what they want to use a computer for.  It creates a band of possible activity (office worker, art worker, internet browser) and then proceeds to celebrate how fabulously unique you are within the narrow little strip they've provided for your existence. [^1]
 
 And while it might be possible to step outside of this, it's policed on both sides – on the one the transformation of software writing into the intimidating tower of software engineering, and on the other through the figure of the pitiable, antisocial 'geek' who you'd never want to be like, would you? [2][note2]  And beyond this – when people say they are not technical, or they find computers difficult, I wonder if they could be internalising the fact that software technology was not designed with their bodies and desires in mind.
 
@@ -32,7 +32,7 @@ This means fucking with more than just logins, email accounts, 'personal prefere
 
 **Notes on writings lovingly pillaged:**
 
-[note1]: 1. This, and much of what follows, is heavily heavily indebted to Wendy Chun's _Programmed Visions: Software and Memory_ (2011, MIT Press) and _Control and Freedom: Power and Paranoia in the Age of Fibre Optics_ (2006, MIT Press).
+[^1]: 1. This, and much of what follows, is heavily heavily indebted to Wendy Chun's _Programmed Visions: Software and Memory_ (2011, MIT Press) and _Control and Freedom: Power and Paranoia in the Age of Fibre Optics_ (2006, MIT Press).
 
 [note2]: 2. It's been suggested that these two factors – the embedding of software in engineering, and the cultural stereotype of the geek – is part of what has been keeping women out of computing.  Incidentally, in contradiction to the idea that we're slowly becoming more equal,  the number of women in computing actually has been going down and not up since the 1980s - take a look at Thomas J Misa (eds) _Gender Codes: Why Women are Leaving Computing._ (2010, Wiley).
 
