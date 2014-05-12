@@ -34,7 +34,7 @@ This means fucking with more than just logins, email accounts, 'personal prefere
 
 <a name="note1">1.</a> This, and much of what follows, is heavily heavily indebted to Wendy Chun's _Programmed Visions: Software and Memory_ (2011, MIT Press) and _Control and Freedom: Power and Paranoia in the Age of Fibre Optics_ (2006, MIT Press).
 
-<a name="note2>2.</a> It's been suggested that these two factors – the embedding of software in engineering, and the cultural stereotype of the geek – is part of what has been keeping women out of computing.  Incidentally, in contradiction to the idea that we're slowly becoming more equal,  the number of women in computing actually has been going down and not up since the 1980s - take a look at Thomas J Misa (eds) _Gender Codes: Why Women are Leaving Computing._ (2010, Wiley).
+<a name="note2">2.</a> It's been suggested that these two factors – the embedding of software in engineering, and the cultural stereotype of the geek – is part of what has been keeping women out of computing.  Incidentally, in contradiction to the idea that we're slowly becoming more equal,  the number of women in computing actually has been going down and not up since the 1980s - take a look at Thomas J Misa (eds) _Gender Codes: Why Women are Leaving Computing._ (2010, Wiley).
 
 <a name="note3">3.</a> I came across the connection between Turing's queerness and his work through Jacob Gaboury's articles: 'A Queer History of Computing' – parts 1-3, Check them out: http://rhizome.org/editorial/2013/feb/19/queer-computing-1/
 
