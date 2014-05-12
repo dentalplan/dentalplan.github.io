@@ -36,5 +36,5 @@ This means fucking with more than just logins, email accounts, 'personal prefere
 
 <a name="note2">2.</a> It's been suggested that these two factors – the embedding of software in engineering, and the cultural stereotype of the geek – is part of what has been keeping women out of computing.  Incidentally, in contradiction to the idea that we're slowly becoming more equal,  the number of women in computing actually has been going down and not up since the 1980s - take a look at Thomas J Misa (eds) _Gender Codes: Why Women are Leaving Computing._ (2010, Wiley).
 
-<a name="note3">3.</a> I came across the connection between Turing's queerness and his work through Jacob Gaboury's articles: 'A Queer History of Computing' – parts 1-3, Check them out: http://rhizome.org/editorial/2013/feb/19/queer-computing-1/
+<a name="note3">3.</a> I came across the connection between Turing's queerness and his work through Jacob Gaboury's articles: 'A Queer History of Computing' – parts 1-3, [available here](http://rhizome.org/editorial/2013/feb/19/queer-computing-1/)
 
