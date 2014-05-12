@@ -4,7 +4,7 @@ title: Queering the Universal User - a 'personal' reflection
 category: Scrap
 author: Cliff Hammett
 
-excerpt: this alone is reason enough to pursue a particular kind of queer computing, one that seeks to expose the alleged 'universality' of software platforms, in the same way other queer strategies can expose the workings of power...
+excerpt: ...this alone is reason enough to pursue a particular kind of queer computing, one that seeks to expose the alleged 'universality' of software platforms, in the same way other queer strategies can expose the workings of power...
 
 ---
 
