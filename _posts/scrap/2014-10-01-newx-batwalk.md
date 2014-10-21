@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bat detection walk in New Cross
+title: Bat detection walk with New Cross Commoners
 category: Scrap
 author: Cliff Hammett
 
