@@ -1,6 +1,6 @@
 ---
 layout: post
-title: From Coal to Diamond
+title: From coal to Diamond
 category: Scrap
 author: Cliff Hammett
 
