@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Time Scales
-category: Ongoing-Projects
+category: Complete-Projects
 author: Cliff Hammett
 projectid: timescales
 

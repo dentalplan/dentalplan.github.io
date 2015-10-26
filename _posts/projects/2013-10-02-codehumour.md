@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Coded Humour
-category: Ongoing-Projects
+category: Complete-Projects
 author: Cliff Hammett
 projectid: codedhumour
 
