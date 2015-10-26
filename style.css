@@ -1,11 +1,13 @@
 body {
-    font-size: 10pt;
+    font-size: 10.5pt;
     font-family: Helvetica, Arial, SunSans-Regular, Sans-Serif;
     color:#333333;
     margin-left: 5%;
 }
 
-
+#header {
+/*  background: white url(/resources/img/header_test.png) center no-repeat;*/
+}
 
 hgroup h1>a {
     font-size: 30pt;
@@ -199,12 +201,13 @@ nav a:active{
     font-size: 12pt;
     display:block;
     padding-top:4px;
-    padding-left:41px;
-    padding-right:41px;
+    padding-left:25px;
+    padding-right:25px;
     padding-bottom:4px;
     font-weight:bold;
     color: white;
-    background-color: #4D5C4D;
+/*  background-color: #4D5C4D;*/
+    background-color: transparent;
     text-decoration: none;
 }
 
@@ -218,7 +221,7 @@ nav a:hover {
 body#home a#homenav,
 body#about a#aboutnav,
 body#collab a#collabnav,
-body#project a#projectnav,
+body#project a#orojectnav,
 body#scrap a#scrapnav,
 body#contact a#connav {
 	color: white;
@@ -352,7 +355,6 @@ scrap td{
 	padding: 8px;
 }
 
-
 scrap a>table,
 scrap a:visited>table,
 scrap a:active>table {
@@ -365,6 +367,40 @@ scrap a:hover>table {
 	background-color:black;
 }
 
+archive {
+	display: block;
+	width: 97%;
+	float: left;
+}
+
+archive .title{
+	margin-left: 35px; 
+	min-width: 76%;
+	max-width: 85%;
+        font-weight:bold;
+	float: left;
+	display: block;
+}
+
+archve .date{
+/*	float: right;*/
+	min-width: 15%;
+	max-width: 24%;
+	margin-left: 35px;
+	margin-right: 35px;
+	float: right;
+	display: block;
+}
+
+archive a,
+archive a:visited,
+archive a:active {
+	color: #4D5C4D;
+}
+
+archive a:hover{
+        color: #1F231F;
+}
 /*collab elements begin*/
 collab{
     display:block;
@@ -409,10 +445,12 @@ project a,
 project a:visited,
 project a:active{
 	color: white;
+	font-size: 10pt;
 	background-color: #4D5C4D;
-	text-decoration: none;i
+	text-decoration: none;
 	padding 2px;
 }
+
 
 project img{
 	display:block;
@@ -453,6 +491,7 @@ other-project a:visited,
 other-project a:active{
     	color:#1F231F;
 	text-decoration: none;
+	font-size: 10pt;
 	padding 2px;
 }
 
