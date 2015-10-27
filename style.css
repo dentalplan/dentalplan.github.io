@@ -221,8 +221,9 @@ nav a:hover {
 body#home a#homenav,
 body#about a#aboutnav,
 body#collab a#collabnav,
-body#project a#orojectnav,
+body#project a#projectnav,
 body#scrap a#scrapnav,
+body#publications a#pubnav,
 body#contact a#connav {
 	color: white;
 	background-color: #1F231F;
