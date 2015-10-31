@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The temporal politics of the joke
-category: Scrap
+category: Scrap-archive
 author: Cliff Hammett
 
 relatedproject: errantgame, clockexcept

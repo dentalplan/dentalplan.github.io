@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Temporal Errant Gaming - a compilation
-category: Scrap
+category: Scrap-archive
 author: Cliff Hammett
 
 relatedproject: errantgame

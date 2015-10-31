@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The game as self-regulating system
-category: Scrap
+category: Scrap-archive
 author: Cliff Hammett
 
 relatedproject: errantgame
