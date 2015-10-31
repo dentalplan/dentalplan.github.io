@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Solutions provided by ada
-category: Scrap
+category: Scrap-archive
 author: Cliff Hammett
 
 excerpt:
