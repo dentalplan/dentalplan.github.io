@@ -4,7 +4,7 @@ title: Making things count - a datawalk
 category: Scrap
 author: Cliff Hammett
 
-relatedproject: heterodyning
+relatedproject: heterodyning, nightsniffing
 headerimg: disp_sc_makingthingscount1_route.png
 headeralt: a map showing my planned and actual route on the datawalk.
 thumbimg: thumb_sc_makingthingscount1.jpg

@@ -4,7 +4,7 @@ title: Reveries of a solitary bat walker
 category: Scrap
 author: Cliff Hammett
 
-relatedproject: heterodyning
+relatedproject: heterodyning, nightsniffing
 thumbimg: thumb_sc_solobatwalk.jpg
 thumbalt: Alone with my bat detector
 
