@@ -34,8 +34,22 @@ title: Scrapbook
 
         {% endfor %}
 
-<!--    </div>  -->
 </div>
-	
+
+        <archive>
+        <h3>Archive</h3>
+
+        {% for post in site.categories.scrap-archive %}
+           <p> <a href="{{ post.url }}">
+                <span class="title">{{ post.title }}</span>
+            </a>
+	   </p>
+	   <p>
+            <span class="date">
+		<time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time>
+	    </span>
+           </p>
+        {% endfor %}
+        </archive>
 
 </body>
