@@ -13,3 +13,5 @@ thumbalt: Part of the Time Scales physical database
 ![Timescales kitchen](/resources/img/project_timescales1.jpg)
 ![A temporal relation expressed through smell](/resources/img/project_timescales2.jpg)
 Ever timed the cooking of eggs by how much bread you could butter? Or counted the gurgles of a fridge to tell you when the tea was brewed? Time scales is a small set of experiments exploring time as a relationship between physical processes, to produce a set of temporal ratios for kitchen practices and procedures without reference to normative metrical time. These ratios are then manifested in the properties of foodstuffs and utensils – temporality mapped out in comparisons of weight, colour, volume, smell – creating a sensorial database of time relations. These experiments are part of an ongoing investigation into errant temporalities.
+
+Time Scales was exhibited as part of the [*Everything But the Kitchen*](http://opensystem.org.uk/project/2013/06/21/everything-but-the-kitchen.html) exhibition at Harts Lane Studios, London.
