@@ -1,9 +1,48 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Home |  Cliff Hammett</title>
+        <link rel="stylesheet" href="/style.css" /> 
+        <link rel="stylesheet" href="/normalize.css" /> 
+        <link rel="stylesheet" href="/normalize.min.css" /> 
+        <meta name="description" content="anomie cybernetics zoontology poetry exception exception"/>
+        <meta name="author" content="Cliff Hammett"/>
+        <link rel="author" href="humans.txt"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/feed.xml" />
+        <link rel="stylesheet" href="/resources/css/grid.css"> 
+        <!--[if IE 7]><link rel="stylesheet" href="/resources/fontello/css/fontello-ie7.css"><![endif]-->
+    </head>
 
-<body id="home">
+    <body>
+     <wrapper>
+        <header>
+	   <div id="header">
+            <hgroup>
+
+            <h1><a href="/">Cliff Hammett</a></h1>
+                <h4>anomie cybernetics zoontology poetry exception exception</h4>
+            </hgroup>	
+            <nav>
+		<table><tr><td>
+			<li><a href="/" id="homenav">Home</a></li>
+<!--			<li><a href="/about" id="aboutnav">About</a></li> -->
+			<li><a href="/collaborations" id="collabnav">Collaborations</a></li>
+			<li><a href="/projects" id="projectnav">Projects</a></li>
+			<li><a href="/scrapbook" id="scrapnav">Scrapbook</a></li>
+			<li><a href="/publications" id="pubnav">Publications</a></li>
+			<li><a href="/contact" id="connav">Contact</a></li>
+		<tr></tr></table>
+
+	    </nav>
+	    </div>
+        </header>
+
+
+        <main>
+
+            <body id="home">
 
 <table>
    <tr>
@@ -42,15 +81,23 @@ title: Home
      </td>
      <td width = 180px>
 	<h3>Ongoing Projects</h3>
-	{% for post in site.categories.ongoing-projects limit: 2  %}
+	
 	  <other-project class='other-projects grid_18'> 
-            <a href="{{ post.url }}">
-               <img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" width=170px >  
-               <strong>{{ post.title }}</strong>
-               </br>{{ post.excerpt }}
+            <a href="/ongoing-projects/2015/10/01/nightsniffing/">
+               <img src="/resources/img/thumb_nightsniffing.png" alt="a bat detector" width=170px >  
+               <strong>Nightsniffing</strong>
+               </br>Ultrasonic eavesdropping in the algorithmic city
             </a>
          </other-project>
-	{% endfor %}
+	
+	  <other-project class='other-projects grid_18'> 
+            <a href="/ongoing-projects/2013/10/15/timescales/">
+               <img src="/resources/img/thumb_timescales.jpg" alt="Part of the Time Scales physical database" width=170px >  
+               <strong>Time Scales</strong>
+               </br>A set of experiments that explore time as a relationship between physical processes.
+            </a>
+         </other-project>
+	
 	<subfooter>
 		<a href="/projects">More</a>
 	</subfooter>
@@ -58,3 +105,14 @@ title: Home
     </tr>
 </table>
 </body>
+
+
+        </main>
+
+	<footer>
+            <p>contact: info 'at' cliffhammett.com</p>
+	</footer>
+      </wrapper>
+    </body>
+
+</html>

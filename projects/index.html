@@ -1,32 +1,90 @@
----
-layout: default
-title: Projects
----
-<body id="project">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Projects |  Cliff Hammett</title>
+        <link rel="stylesheet" href="/style.css" /> 
+        <link rel="stylesheet" href="/normalize.css" /> 
+        <link rel="stylesheet" href="/normalize.min.css" /> 
+        <meta name="description" content="anomie cybernetics zoontology poetry exception exception"/>
+        <meta name="author" content="Cliff Hammett"/>
+        <link rel="author" href="humans.txt"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/feed.xml" />
+        <link rel="stylesheet" href="/resources/css/grid.css"> 
+        <!--[if IE 7]><link rel="stylesheet" href="/resources/fontello/css/fontello-ie7.css"><![endif]-->
+    </head>
+
+    <body>
+     <wrapper>
+        <header>
+	   <div id="header">
+            <hgroup>
+
+            <h1><a href="/">Cliff Hammett</a></h1>
+                <h4>anomie cybernetics zoontology poetry exception exception</h4>
+            </hgroup>	
+            <nav>
+		<table><tr><td>
+			<li><a href="/" id="homenav">Home</a></li>
+<!--			<li><a href="/about" id="aboutnav">About</a></li> -->
+			<li><a href="/collaborations" id="collabnav">Collaborations</a></li>
+			<li><a href="/projects" id="projectnav">Projects</a></li>
+			<li><a href="/scrapbook" id="scrapnav">Scrapbook</a></li>
+			<li><a href="/publications" id="pubnav">Publications</a></li>
+			<li><a href="/contact" id="connav">Contact</a></li>
+		<tr></tr></table>
+
+	    </nav>
+	    </div>
+        </header>
+
+
+        <main>
+
+            <body id="project">
 
 <h2>Ongoing / in development</h2>
 
 <div class="content grid_19">
     <div class='projects clearfix'>
-        {% for post in site.categories.ongoing-projects %}
+        
  	<project class='projects grid_18'> 
-	<a href="{{ post.url }}">
+	<a href="/ongoing-projects/2015/10/01/nightsniffing/">
  	      <table width=360px height=160px>
 		<tr>
 		  <td width=170px>		 
-			<img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" >	
+			<img src="/resources/img/thumb_nightsniffing.png" alt="a bat detector" >	
 		  </td>
 		  <td width=2px></td>	
 		  <td width=180px >
-        	    <h3>{{ post.title }}</h3>
-            	    <p>{{ post.excerpt }}</p>
+        	    <h3>Nightsniffing</h3>
+            	    <p>Ultrasonic eavesdropping in the algorithmic city</p>
 		  </td>
 		  <td width=2px></td>	
  		</tr>
                </table>
 	</a>
         </project>
-        {% endfor %}
+        
+ 	<project class='projects grid_18'> 
+	<a href="/ongoing-projects/2013/10/15/timescales/">
+ 	      <table width=360px height=160px>
+		<tr>
+		  <td width=170px>		 
+			<img src="/resources/img/thumb_timescales.jpg" alt="Part of the Time Scales physical database" >	
+		  </td>
+		  <td width=2px></td>	
+		  <td width=180px >
+        	    <h3>Time Scales</h3>
+            	    <p>A set of experiments that explore time as a relationship between physical processes.</p>
+		  </td>
+		  <td width=2px></td>	
+ 		</tr>
+               </table>
+	</a>
+        </project>
+        
     </div>
 </div>
 
@@ -36,22 +94,119 @@ title: Projects
 
 <div class="content grid_20">
   <!--  <div class='other-projects clearfix'> -->
-        {% for post in site.categories.complete-projects %}
+        
  	<other-project class='other-projects grid_18'> 
-	{% if post.overrideurl and post.overrideurl != "" %}
-	   <a href="{{ post.overrideurl }}" target="_blank">
-        {% else %}
-	   <a href="{{ post.url }}">
-	{% endif %}
-			<img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" width=170px >	
-        	    <strong>{{ post.title }}</strong>
-            	    </br>{{ post.excerpt }}
+	
+	   <a href="/complete-projects/2013/10/02/codehumour/">
+	
+			<img src="/resources/img/thumb_codedhumour.jpg" alt="" width=170px >	
+        	    <strong>Coded Humour</strong>
+            	    </br>Explorations of software structured like jokes. Part of the 'Jokes in Systems' series.
  
 	</a>
         </other-project>
-        {% endfor %}
+        
+ 	<other-project class='other-projects grid_18'> 
+	
+	   <a href="/complete-projects/2013/10/01/clockwork-except/">
+	
+			<img src="/resources/img/thumb_jokesinsys.jpg" alt="" width=170px >	
+        	    <strong>A Clockwork Exception</strong>
+            	    </br>A buggy clock pulls the viewer into its own self-regulation. Part of the 'Jokes in Systems' series.
+ 
+	</a>
+        </other-project>
+        
+ 	<other-project class='other-projects grid_18'> 
+	
+	   <a href="/complete-projects/2013/09/29/errant-gaming/">
+	
+			<img src="/resources/img/thumb_anomie2.jpg" alt="" width=170px >	
+        	    <strong>Errant Gaming</strong>
+            	    </br>Generative disruptions to game mechanisms. Part of the 'Jokes in Systems' series.
+ 
+	</a>
+        </other-project>
+        
+ 	<other-project class='other-projects grid_18'> 
+	
+	   <a href="/complete-projects/2013/09/01/riotous/">
+	
+			<img src="/resources/img/thumb_riotous.jpg" alt="illustration of an owl in preparation." width=170px >	
+        	    <strong>Riotous</strong>
+            	    </br>Illustrations for a book of tropical zoo sonnets
+ 
+	</a>
+        </other-project>
+        
+ 	<other-project class='other-projects grid_18'> 
+	
+	   <a href="/complete-projects/2013/05/01/xmsg-tel/">
+	
+			<img src="/resources/img/thumb_xmsg.jpg" alt="The x_msg" width=170px >	
+        	    <strong>x-msg SMS Server</strong>
+            	    </br>The x_msg server is a many-to-many text messaging system for use in sex work activism.
+ 
+	</a>
+        </other-project>
+        
+ 	<other-project class='other-projects grid_18'> 
+	
+	   <a href="http://yoha.co.uk/node/709" target="_blank">
+        
+			<img src="/resources/img/thumb_evilmedia.jpg" alt="Clipboard with text at Evil Media exhibitiion" width=170px >	
+        	    <strong>Text for YoHa's 'Evil Media Distrubtion Centre' &raquo;</strong>
+            	    </br>A text on Hooke's Telegraph System for an exhibition at Transmediale.
+ 
+	</a>
+        </other-project>
+        
+ 	<other-project class='other-projects grid_18'> 
+	
+	   <a href="http://reboot.yoha.co.uk/index.php?title=Ambient_Alarm_Clock" target="_blank">
+        
+			<img src="/resources/img/thumb_ambientac.jpg" alt="The ambient alarm clock on a windowsill." width=170px >	
+        	    <strong>Ambient Alarm Clock &raquo;</strong>
+            	    </br>A pedagogic electronics project for Rebooting Computing
+ 
+	</a>
+        </other-project>
+        
+ 	<other-project class='other-projects grid_18'> 
+	
+	   <a href="http://xmsg.org.uk/projects/hex_msg/" target="_blank">
+        
+			<img src="/resources/img/thumb_hexmsg.jpg" alt="cursed code from hexmsg" width=170px >	
+        	    <strong>hex_msg &raquo;</strong>
+            	    </br>A reimagining of the x_msg system for Moving Forest
+ 
+	</a>
+        </other-project>
+        
+ 	<other-project class='other-projects grid_18'> 
+	
+	   <a href="http://www.fleeimmediately.co.uk/fleeimmediately_issues.html" target="_blank">
+        
+			<img src="/resources/img/thumb_flask.jpg" alt="Flee Immediately issue 01 Manual" width=170px >	
+        	    <strong>FLASK quick install guide &raquo;</strong>
+            	    </br>A reflection on technical documentation for Flee Immediately
+ 
+	</a>
+        </other-project>
+        
 <!--    </div>  -->
 </div>
 
 
 
+
+
+        </main>
+
+	<footer>
+            <p>contact: info 'at' cliffhammett.com</p>
+	</footer>
+      </wrapper>
+    </body>
+
+</html>

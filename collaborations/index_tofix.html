@@ -1,0 +1,29 @@
+---
+layout: default
+title: Collaborations
+---
+<body id="collab">
+
+
+{% for post in site.categories.collaborations %}
+	<collab>
+
+	 
+	   <a href="{{post.url}}"><img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.alt }}" width=100%>
+
+	   <table width=100%>
+	   <tr>
+           <td width=40%>
+		   <h2>{{ post.title }}</h2>
+	    </td>
+	    <td width=60%>
+			<div class="entry">{{ post.excerpt }}</div>
+	    </td>
+	    </tr>
+	    </table>
+	    </a>
+	</collab>
+	</br>
+{% endfor %}
+
+</body>
