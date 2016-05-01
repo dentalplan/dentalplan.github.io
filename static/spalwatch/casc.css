@@ -3,7 +3,6 @@ body{
 }
 
 a{
-
     color: #bfcdd1;
 }
 
@@ -28,15 +27,17 @@ wrapper2{
 }
 
 .outer {
+    margin-top:0px;
     overflow: hidden;
     position: relative;
     width: 3836px;
 }
 
 .inner {
+    margin-top:0px;
     position: relative;
-    max-width: 900px;
-    left: 2936px;
+    max-width: 700px;
+    left: 3136px;
  }
 
 .there{
@@ -53,8 +54,8 @@ wrapper2{
     background-color: #484848;
 }
 
-a li 
-a:visited li
+a li, 
+a:visited li,
 a:active li{
     text-decoration:none;
 }
@@ -74,9 +75,26 @@ lownav img{
     float:right;
 }
 
+nav1{
+    margin-top:0px;
+    display:block;
+}
+
 nav1 img{
+    margin-top:4px;
     display:block;
     float:left;
+}
+
+nav2 img{
+    display:block;
+    float:left;
+    margin-top: 4px;
+}
+
+txtblock{
+    display: block;
+    margin-top:40px;
 }
 
 nav1 li{
@@ -96,6 +114,7 @@ nav2 ul{
     list-style-type: none;
     list-style-position:inside;
     margin: 0;
+    padding: 0;
 }
 
 nav2 li{

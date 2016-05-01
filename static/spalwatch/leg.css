@@ -19,6 +19,12 @@ wrapper{
     color: #bfcdd1;
 } 
 
+headbar{
+    display:block;
+    min-height:60px;
+    width:100%;
+}
+
 wrapper h2{
     font-size: 12pt;
     text-align: right;
@@ -70,7 +76,7 @@ dataflds{
 
 dataflds p{
     display: block;
-    min-height: 90pt;
+    min-height: 42pt;
 }
 
 dataflds li{
@@ -99,16 +105,29 @@ ul{
     padding: 0px;
 }
 
+lownav{
+    font-size: 10pt;
+    vertical-align:top;
+    display: block;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+lownav li{
+    margin-bottom: 0px;
+}
 controls{
     font-size: 9pt;
     border-style: solid;
     border-color: #657475;
     background-color: #0b0c0b;
-    display: block;
+    display: inline;
     float: right;
+    text-align: right;
     max-width: 120px;
     margin: 1px;
-    margin-top: 90px;
+    margin-top: 10px;
     padding: 5px;
 }
 

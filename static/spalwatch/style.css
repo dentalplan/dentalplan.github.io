@@ -56,25 +56,6 @@ descblock table td{
     vertical-align:top;
 }
 
-dataflds{
-    min-width: 230px;
-    max-width: 720px;
-    font-size: 10pt;
-    vertical-align:top;
-    display: block;
-    float: left;
-    margin: 5px;
-    padding: 5px;
-}
-
-dataflds p{
-    display: block;
-    min-height: 90pt;
-}
-
-dataflds li{
-    margin-bottom: 0px;
-}
 
 li{
     margin-bottom: 9pt;
@@ -86,7 +67,6 @@ descblock img{
     float: left;
     margin-right: 12px;
     margin-top: 6px;
-
 }
 
 ul{
@@ -115,31 +95,7 @@ controls li{
     display: inline;
 }
 
-audholder{
-    display: block;
-    margin-left: auto;
-    margin-right: 60px;
-    float: center;
-}
 
-audio{
-    display: block;
-}
-
-audholder{
-    display: block;
-    margin-left: auto;
-    margin-right: 60px;
-    float: center;
-}
-
-data table{
-    background-color: #4D5C4D;
-    margin: 0,0,0,0;
-    padding: 0;
-    border: none;
-    border-collapse:collapse;
-}
 
 project{
     width: 700px;
@@ -149,7 +105,10 @@ project{
     font-size: 8pt;
     padding:0px;
     margin-bottom: 20px;
-    height: 260px;
+  /*  height: 260px;*/
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #bfcdd1;
 }
 
 
@@ -157,9 +116,9 @@ project a,
 project a:visited,
 project a:active{
     font-size: 8pt;
+    color: #050605;
     background-color: #484848;
     text-decoration: none;
-    padding 2px;
 }
 
 project img{
@@ -167,7 +126,8 @@ project img{
 }
 
 project a:hover{
-    background-color: #0b0c0b;
+    /*background-color: #0b0c0b;*/
+    background-color: #3c474b;
 }
 
 project h4{
