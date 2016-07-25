@@ -1,48 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <title> Scrapbook |  Cliff Hammett</title>
-        <link rel="stylesheet" href="/style.css" /> 
-        <link rel="stylesheet" href="/normalize.css" /> 
-        <link rel="stylesheet" href="/normalize.min.css" /> 
-        <meta name="description" content="anomie cybernetics zoontology poetry exception exception"/>
-        <meta name="author" content="Cliff Hammett"/>
-        <link rel="author" href="humans.txt"/>
-        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/feed.xml" />
-        <link rel="stylesheet" href="/resources/css/grid.css"> 
-        <!--[if IE 7]><link rel="stylesheet" href="/resources/fontello/css/fontello-ie7.css"><![endif]-->
-    </head>
-
-    <body>
-     <wrapper>
-        <header>
-	   <div id="header">
-            <hgroup>
-
-            <h1><a href="/">Cliff Hammett</a></h1>
-                <h4>anomie cybernetics zoontology poetry exception exception</h4>
-            </hgroup>	
-            <nav>
-		<table><tr><td>
-			<li><a href="/" id="homenav">Home</a></li>
-<!--			<li><a href="/about" id="aboutnav">About</a></li> -->
-			<li><a href="/collaborations" id="collabnav">Collaborations</a></li>
-			<li><a href="/projects" id="projectnav">Projects</a></li>
-			<li><a href="/scrapbook" id="scrapnav">Scrapbook</a></li>
-			<li><a href="/publications" id="pubnav">Publications</a></li>
-			<li><a href="/contact" id="connav">Contact</a></li>
-		<tr></tr></table>
-
-	    </nav>
-	    </div>
-        </header>
-
-
-        <main>
-
-            <body id="scrap">
+---
+layout: default
+title: Scrapbook
+---
+<body id="scrap">
 
 	<article>
 	<p>
@@ -55,333 +15,41 @@
 
   <!--  <div class='other-projects clearfix'> -->
 
-	
+	{% for post in site.categories.scrap %}
 
  	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2015/10/13/notaboutghostsspectro/">
-		
-			<img src="/resources/img/thumb_sc_notaboutghosts.jpg" alt="pixelated part of a panoramic" >	
-		
-        	<strong>It's not about ghosts - capturing human spectrograms</strong>
-            	</br><span class="date"><time datetime="2015-10-13">Oct 13, 2015</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2015/08/18/makingthingscount1/">
-		
-			<img src="/resources/img/thumb_sc_makingthingscount1.jpg" alt="weeds growing in a car park - but how many?" >	
-		
-        	<strong>Making things count - a datawalk</strong>
-            	</br><span class="date"><time datetime="2015-08-18">Aug 18, 2015</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2015/08/03/leguinindividuation/">
-		
-			<img src="/resources/img/thumb_sc_leguin.jpg" alt="the eye of a bear, from Ursula Le Guin's 'Always Coming Home'" >	
-		
-        	<strong>The modes of Earth and Sky in Le Guin's 'Always Coming Home'</strong>
-            	</br><span class="date"><time datetime="2015-08-03">Aug 03, 2015</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2015/07/22/lbu-launch/">
-		
-			<img src="/resources/img/thumb_sc_lbu.jpg" alt="a cat watching people watching a bird" >	
-		
-        	<strong>Lives Beyond Us - a volume on film and animals</strong>
-            	</br><span class="date"><time datetime="2015-07-22">Jul 22, 2015</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2015/02/24/from-coal-to-diamond/">
-		
+	   <a href="{{ post.url }}">
+		{% if post.thumbimg and post.thumbimg != "" %}
+			<img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" >	
+		{% else %}
 			<table width = "200px" height = "170px"><tr><td>
-				I want to briefly reflect about a few considerations rising out an essay by the philosopher Cora Diamond, in the context of a response to a piece of work by YoHa called 'Coal Fired Computing'. The response I'm interested in is ...
+				{{ post.excerpt }}
 			</td><tr></table>
-		
-        	<strong>From coal to Diamond</strong>
-            	</br><span class="date"><time datetime="2015-02-24">Feb 24, 2015</time></span>
+		{% endif %}
+        	<strong>{{ post.title }}</strong>
+            	</br><span class="date"><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span>
 	   </a>
 
         </scrap>
 
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2014/10/01/newx-batwalk/">
-		
-			<img src="/resources/img/thumb_sc_newxbatwalk.jpg" alt="bat detecting in New Cross" >	
-		
-        	<strong>Bat detection walk with New Cross Commoners</strong>
-            	</br><span class="date"><time datetime="2014-10-01">Oct 01, 2014</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2014/09/21/solobatwalks/">
-		
-			<img src="/resources/img/thumb_sc_solobatwalk.jpg" alt="Alone with my bat detector" >	
-		
-        	<strong>Reveries of a solitary bat walker</strong>
-            	</br><span class="date"><time datetime="2014-09-21">Sep 21, 2014</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2014/05/12/queering-universal-user/">
-		
-			<table width = "200px" height = "170px"><tr><td>
-				...this alone is reason enough to pursue a particular kind of queer computing, one that seeks to expose the alleged 'universality' of software platforms, in the same way other queer strategies can expose the workings of power...
-			</td><tr></table>
-		
-        	<strong>Queering the Universal User - a 'personal' reflection</strong>
-            	</br><span class="date"><time datetime="2014-05-12">May 12, 2014</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2014/03/29/arduinoshowcase/">
-		
-			<img src="/resources/img/thumb_sc_furthershowcase.jpg" alt="Playing cards with the turn times" >	
-		
-        	<strong>Heart rate turn timers at Furtherfield Commons</strong>
-            	</br><span class="date"><time datetime="2014-03-29">Mar 29, 2014</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2014/03/08/shadows/">
-		
-			<img src="/resources/img/thumb_sc_grass.jpg" alt="Drawings of the shadows of grass blade" >	
-		
-        	<strong>Every blade a hand</strong>
-            	</br><span class="date"><time datetime="2014-03-08">Mar 08, 2014</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2013/09/24/anomienewboard/">
-		
-			<img src="/resources/img/thumb_sc_anomienewboard.png" alt="Part of the new anomie game board" >	
-		
-        	<strong>New board and rules for Anomie</strong>
-            	</br><span class="date"><time datetime="2013-09-24">Sep 24, 2013</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2013/07/18/decayingdatabase/">
-		
-			<img src="/resources/img/thumb_sc_decayingdatabase.jpg" alt="A rotting piece of pepper in a container" >	
-		
-        	<strong>A decaying database</strong>
-            	</br><span class="date"><time datetime="2013-07-18">Jul 18, 2013</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2013/06/22/timescalesdb/">
-		
-			<img src="/resources/img/thumb_sc_tsdatabase.jpg" alt="The timescales database - a shelf of objects materialising relational time recordings" >	
-		
-        	<strong>The Time Scales database</strong>
-            	</br><span class="date"><time datetime="2013-06-22">Jun 22, 2013</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2013/06/20/timescaleexp2/">
-		
-			<img src="/resources/img/thumb_sc_timescalesexexperiment2.jpg" alt="Fragment of a relational time graph" >	
-		
-        	<strong>Time Scales experiment 02</strong>
-            	</br><span class="date"><time datetime="2013-06-20">Jun 20, 2013</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2013/06/14/timescaleexp1/">
-		
-			<img src="/resources/img/thumb_timescalesexexperiment1.jpg" alt="Fragment of a relational time graph" >	
-		
-        	<strong>Timescales experiment 01</strong>
-            	</br><span class="date"><time datetime="2013-06-14">Jun 14, 2013</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2013/04/05/animach/">
-		
-			<img src="/resources/img/thumb_animachine1.jpg" alt="A bat hears the rocket launch" >	
-		
-        	<strong>Animachine relation drawings</strong>
-            	</br><span class="date"><time datetime="2013-04-05">Apr 05, 2013</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2013/03/16/bussunexp/">
-		
-			<img src="/resources/img/thumb_bussunexp.jpg" alt="Bus moving from shadow to sun" >	
-		
-        	<strong>The bus sun experiment</strong>
-            	</br><span class="date"><time datetime="2013-03-16">Mar 16, 2013</time></span>
-	   </a>
-
-        </scrap>
-
-        
-
- 	<scrap class='scrap grid_18 spacedgrid'> 
-	   <a href="/scrap/2013/03/11/debugworkshop/">
-		
-			<img src="/resources/img/thumb_sc_debug.jpg" alt="Error message in code" >	
-		
-        	<strong>DEBUG workshop</strong>
-            	</br><span class="date"><time datetime="2013-03-11">Mar 11, 2013</time></span>
-	   </a>
-
-        </scrap>
-
-        
+        {% endfor %}
 
 </div>
 
         <archive>
         <h3>Archive</h3>
 
-        
-           <p> <a href="/scrap-archive/2012/10/11/tempoheartrate/">
-                <span class="title">Turn timers for heartbeat chess</span>
+        {% for post in site.categories.scrap-archive %}
+           <p> <a href="{{ post.url }}">
+                <span class="title">{{ post.title }}</span>
             </a>
 	   </p>
 	   <p>
             <span class="date">
-		<time datetime="2012-10-11">Oct 11, 2012</time>
+		<time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time>
 	    </span>
            </p>
-        
-           <p> <a href="/scrap-archive/2012/07/04/solutionsprovidedbyada/">
-                <span class="title">Solutions provided by ada</span>
-            </a>
-	   </p>
-	   <p>
-            <span class="date">
-		<time datetime="2012-07-04">Jul 04, 2012</time>
-	    </span>
-           </p>
-        
-           <p> <a href="/scrap-archive/2012/05/13/kraken/">
-                <span class="title">Kraken</span>
-            </a>
-	   </p>
-	   <p>
-            <span class="date">
-		<time datetime="2012-05-13">May 13, 2012</time>
-	    </span>
-           </p>
-        
-           <p> <a href="/scrap-archive/2011/08/22/gameselfregulates/">
-                <span class="title">The game as self-regulating system</span>
-            </a>
-	   </p>
-	   <p>
-            <span class="date">
-		<time datetime="2011-08-22">Aug 22, 2011</time>
-	    </span>
-           </p>
-        
-           <p> <a href="/scrap-archive/2011/08/07/temporalpol/">
-                <span class="title">The temporal politics of the joke</span>
-            </a>
-	   </p>
-	   <p>
-            <span class="date">
-		<time datetime="2011-08-07">Aug 07, 2011</time>
-	    </span>
-           </p>
-        
-           <p> <a href="/scrap-archive/2011/07/15/tempocompilation/">
-                <span class="title">Temporal Errant Gaming - a compilation</span>
-            </a>
-	   </p>
-	   <p>
-            <span class="date">
-		<time datetime="2011-07-15">Jul 15, 2011</time>
-	    </span>
-           </p>
-        
-           <p> <a href="/scrap-archive/2011/02/17/anomierules/">
-                <span class="title">Anomie - an experimental card game</span>
-            </a>
-	   </p>
-	   <p>
-            <span class="date">
-		<time datetime="2011-02-17">Feb 17, 2011</time>
-	    </span>
-           </p>
-        
+        {% endfor %}
         </archive>
 
 </body>
-
-
-        </main>
-
-	<footer>
-            <p>contact: info 'at' cliffhammett.com</p>
-	</footer>
-      </wrapper>
-    </body>
-
-</html>

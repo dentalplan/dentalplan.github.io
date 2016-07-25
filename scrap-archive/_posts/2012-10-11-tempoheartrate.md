@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Turn timers for heartbeat chess 
-category: Scrap
+category: Scrap-archive
 author: Cliff Hammett
 
 relatedproject: errantgame
