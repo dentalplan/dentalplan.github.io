@@ -16,10 +16,26 @@ layout: default
 
     </article>
 
+{% assign has_title = false %}
+{% for post in site.categories.scrap %}
+ 
+    {% if post.relatedproject contains {{page.projectid}} %}
+         <h2>{{ page.title }} scrapbook</h2>
+	{% assign has_title = true %}
+	{% break %}
+    {% endif %}
+{% endfor %}
 
-{% if page.projectid %}
-    <h2>{{ page.title }} scrapbook</h2>
+{% if has_title == false %}
+    {% for post in site.categories.scrap-archive %}
+        {% if post.relatedproject contains {{page.projectid}} %}
+             <h2>{{ page.title }} scrapbook</h2>
+	     {% assign has_title = true %}
+	     {% break %}
+        {% endif %}
+    {% endfor %}
 {% endif %}
+
 <div class="indentedgrid">
  
    <!--  <div class='other-projects clearfix'> -->
@@ -44,6 +60,25 @@ layout: default
            {% endif %}
          {% endfor %}
  
+         {% for post in site.categories.scrap-archive %}
+ 
+	   {% if post.relatedproject contains {{page.projectid}} %}
+             <scrap class='scrap grid_18 spacedgrid'>
+                <a href="{{ post.url }}">
+                     {% if post.thumbimg and post.thumbimg != "" %}
+                             <img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" >       
+                     {% else %}
+                             <table width = "200px" height = "170px"><tr><td>
+                                     {{ post.excerpt }}
+                             </td><tr></table>
+                     {% endif %}
+                     <strong>{{ post.title }}</strong>
+                     </br><span class="date"><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span>
+                </a>
+  
+              </scrap>
+           {% endif %}
+         {% endfor %}
  <!--    </div>  -->
  </div>
 
