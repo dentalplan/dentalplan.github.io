@@ -254,10 +254,13 @@ body#Ongoing-Projects-post a#projectnav {
 
 
 footer {
-	text-align: center;
+    text-align: center;
     clear: both;
     font-size: 8pt;
-	padding: 15px;
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 15px;
 }
 
 subfooter{
