@@ -4,7 +4,7 @@ title: Data Buffet
 category: Collaborations
 author: Cliff Hammett
 
-excerpt: An ATF collaboration with the Museum of Contemporary Commodiities to explore how we consume data and data consumes us.
+excerpt: An ATF collaboration with the Museum of Contemporary Commodities to explore how we consume data and data consumes us.
 thumbimg: disp_databuffet.png
 thumbalt: collage of images from Data Buffet events
 headerimg: disp_databuffet.png
