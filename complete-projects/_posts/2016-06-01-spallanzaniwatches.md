@@ -1,10 +1,10 @@
 ---
 layout: project
 title: Spallanzani watches the walker
-category: Ongoing-Projects
+category: Complete-Projects
 author: Cliff Hammett
 
-excerpt:  Performing inaudible sonic ecologies and the experimental study of life
+excerpt:  Performing inaudible sonic ecologies and the experimental study of life.
 thumbimg: thumb_spallanzani.png
 thumbalt: ultrasonic appendages - keys, coins, jewellery
 projectid: spallanzani
