@@ -1,0 +1,152 @@
+
+h1 {
+  font-family: Verdana, Helvetica, Arial, "Droid Sans", sans-serif; 
+  font-size: 18pt;
+  padding: none;
+}
+
+h2 {
+  font-family: Helvetica, Arial, "Liberations Sans", sans-serif; 
+  font-size: 14pt;
+  padding: none;
+}
+
+p {
+  font-family: Helvetica, Arial, "Liberations Sans", sans-serif; 
+  font-size: 11pt;
+}
+
+div {
+/*  display: inline; */
+  font-family: Helvetica, Arial, "Liberations Sans", sans-serif; 
+  font-size: 11pt;
+}
+
+.map {
+  display: float;
+  float: right;
+  width: 65%;
+  height: 920px;
+  margin-right: 5px;
+}
+
+.guide {
+  font-size: 9pt;
+}
+
+.system{
+  color: green;
+}
+
+interface {
+  display: block;
+  font-size: 9pt;
+  float: left;
+  overflow-y: scroll;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+/*  background-color: rgb(240,240,240);*/
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 30%;
+  height: 840px;
+}
+
+interface th{
+  width: 9%;
+  font-size: 9pt;
+  background-color: rgb(225,225,225);
+  text-align: right;
+  padding: 2px;
+}
+
+interface td{
+  width: 9%;
+  font-size: 8pt;
+  text-align: right;
+  padding: 2px;
+  background-color: rgb(245,245,245);
+}
+
+input{
+  font-family: Helvetica, Arial, "Liberations Sans", sans-serif; 
+}
+
+.shiContainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  background: url('../images/shiSlideIcon.png');
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 26px;
+  height: 26px;
+  border: 0;
+  background: url('../images/shiSlideIcon.png');
+  cursor: pointer;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 31%;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 12px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 4px;
+  border: 1px solid #ccc;
+  border-top: none;
+}

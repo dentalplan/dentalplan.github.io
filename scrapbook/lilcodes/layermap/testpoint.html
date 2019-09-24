@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ConcreteAction LDD map - alpha</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" /> 
+  <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+  <link rel="stylesheet" href="css/leaflet-search.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+  <link rel="stylesheet" href="css/jquery-ui.css" />
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+  <script src="js/leaflet-search.js"></script>
+  <script src="js/caml_lddlayer.js"></script>
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div id='lMap' class='map'></div>
+        <p>
+            <strong>Add map layer:</strong>
+            <select name="layerDropDown" id="layerDropdown">
+                <option value="eshpa">Social Housing Planning Applications</option>
+                <option value="borall">One borough test</option>
+            </select>
+            <button type="button"  id="addLayer">+</button>
+        </p>
+        <div class="tab" id="tabs">
+        </div>
+    <interface>
+        <div id='layerCtls'></div>
+        <div id='interface'></div>
+    </interface>
+<script>
+    var map = L.map('lMap').setView([51.505, -0.09], 11);
+    L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}', {
+        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        subdomains: 'abcd',
+        minZoom: 4,
+        maxZoom: 18,
+        ext: 'png'
+    }).addTo(map);
+    var maxLayers = 4;
+    var pointer = new focusPointer(L, map);
+    pointer.refocus(51.3, 0);    
+
+    function focusPointer (L, map){
+        var self = this;
+        self.icon = L.icon({
+            iconUrl: 'images/pointer.png',
+            iconSize:     [42, 43], // size of the icon
+            iconAnchor:   [38, 32], // point of the icon which will correspond to marker's location
+            popupAnchor:  [21, 21] // point from which the popup should open relative to the iconAnchor
+        });
+        self.L = L;
+        self.map = map;
+        self.active = false;
+
+        self.refocus = function(lat, lon){
+            if (self.active){
+                self.removeLayer(self.mark);
+            }else{
+                self.active = true;
+            }
+            self.add(lat, lon);
+        }
+
+        self.add = function(lat, lon){
+            self.mark = self.L.marker([lat, lon], {icon: self.icon}).addTo(self.map);
+        }
+
+        self.remove = function(){
+            self.removeLayer(self.mark);
+        }
+    }
+
+</script>
+</body>
+</html>
+

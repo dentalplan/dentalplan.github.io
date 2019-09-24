@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ConcreteAction LDD map - alpha</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" /> 
+  <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+  <link rel="stylesheet" href="css/leaflet-search.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+  <link rel="stylesheet" href="css/jquery-ui.css" />
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+  <script src="js/leaflet-search.js"></script>
+  <script src="js/caml_lddlayer.js"></script>
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div id='lMap' class='map'></div>
+        <p>
+            <strong>Add map layer:</strong>
+            <select name="layerDropDown" id="layerDropdown">
+                <option value="eshpa">Social Housing Planning Applications</option>
+                <option value="borall_th">One borough test - Tower Hamlets</option>
+                <option value="borall_wm">One borough test - Westminster</option>
+                <option value="borall_sw">One borough test - Southwark</option>
+                <option value="borall_thhk">Two borough test - Hackney and Tower Hamlets</option>
+                <option value="borall_lssw">Two borough test - Lewisham and Southwark</option>
+                <option value="allspace">Changes to open space</option>
+            </select>
+            <button type="button"  id="addLayer">+</button>
+        </p>
+        <div class="tab" id="tabs">
+        </div>
+    <interface>
+        <div id='layerCtls'></div>
+        <div id='interface'></div>
+    </interface>
+<script>
+    var map = L.map('lMap').setView([51.505, -0.09], 11);
+    L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}', {
+        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        subdomains: 'abcd',
+        minZoom: 4,
+        maxZoom: 18,
+        ext: 'png'
+    }).addTo(map);
+    var pointer = new focusPointer(L, map);
+    var tabCtl = new tabControl(L, map, document, pointer, "tabCtl");
+
+    function tabControl(L, map, doc, pointer, varName){
+
+        var self = this;
+        self.maxLayers = 4;
+        self.layers = [];
+        self.doc = doc;
+        self.varName = varName;
+        self.tabdiv = doc.getElementById("tabs");
+        self.lp = setupLayers();
+        var addLayerButton = doc.getElementById("addLayer");
+        self.activeTab;
+        addLayerButton.onclick = function(){
+            console.log("Layer button clicked");
+            var layerDd = doc.getElementById("layerDropdown");
+            var sl = layerDd.options[layerDd.selectedIndex].value;
+            if (self.layers.length >= self.maxLayers){
+                console.log("Max number of layers reached");
+            }else{
+                var present = false;
+                for (var i=0; i<self.layers.length; i++){
+                    if (self.layers[i].id == sl){
+                        console.log("Layer is already present");
+                        present = true;
+                    }
+                } 
+                if (!present){
+                    console.log("Adding layer");
+                    self.lp[sl].add();
+                    self.refreshTabs();
+                    doc.getElementById(sl).onclick();
+                }
+            }
+        }
+
+        function setupLayers(){
+            var layerPalette = {
+              "control":
+                  { add: function(){
+                      var ctlLayer = new controlLayer();
+                      self.layers.push({id:"control", layerType: "control", tabName: "Controls", layerObj: ctlLayer, mapActive: false});
+                    }
+                  }, 
+              "eshpa":
+                  { add: function(){ 
+                      lddLayer = new lddSocialHousing(L, map, doc, pointer, self, "planapp.json", "housing", "eshpa", "Planning applications affecting existing social housing in London");
+                      self.layers.push({id: "eshpa", layerType: "data", tabName: "LDD-SH", layerObj: lddLayer, mapActive: false});
+                    }
+                  },
+               "borall_th":
+                  { add: function(){ 
+                      lddLayer = new lddSocialHousing(L, map, doc, pointer, self, "planapp_allbor_th.json", "housing", "borall_th", "Planning applications in Tower Hamlets");
+                      self.layers.push({id: "borall_th", layerType: "data", tabName: "LDD-th", layerObj: lddLayer, mapActive: false});
+                    }
+                  },
+               "borall_thhk":
+                  { add: function(){ 
+                      lddLayer = new lddSocialHousing(L, map, doc, pointer, self, "planapp_allbor_thhk.json", "housing", "borall_thhk", "Planning applications in Hackney and Tower Hamlets");
+                      self.layers.push({id: "borall_thhk", layerType: "data", tabName: "LDD-thhk", layerObj: lddLayer, mapActive: false});
+                    }
+                  },
+               "borall_wm":
+                  { add: function(){ 
+                      lddLayer = new lddSocialHousing(L, map, doc, pointer, self, "planapp_allbor_wm.json", "housing", "borall_wm", "Planning applications in Westminster");
+                      self.layers.push({id: "borall_wm", layerType: "data", tabName: "LDD-wm", layerObj: lddLayer, mapActive: false});
+                    }
+                  },
+               "borall_sw":
+                  { add: function(){ 
+                      lddLayer = new lddSocialHousing(L, map, doc, pointer, self, "planapp_allbor_sw.json", "housing", "borall_sw", "Planning applications in Southwark");
+                      self.layers.push({id: "borall_sw", layerType: "data", tabName: "LDD-sw", layerObj: lddLayer, mapActive: false});
+                    }
+                  },
+               "borall_lssw":
+                  { add: function(){ 
+                      lddLayer = new lddSocialHousing(L, map, doc, pointer, self, "planapp_allbor_lssw.json", "housing", "borall_lssw", "Planning applications in Southwark");
+                      self.layers.push({id: "borall_lssw", layerType: "data", tabName: "LDD-lssw", layerObj: lddLayer, mapActive: false});
+                    }
+                  },
+               "allspace":
+                  { add: function(){ 
+                      lddLayer = new lddSocialHousing(L, map, doc, pointer, self, "planapp_space.json", "all", "allspace", "Planning applications affecting open space in London");
+                      self.layers.push({id: "allspace", layerType: "data", tabName: "Space", layerObj: lddLayer, mapActive: false});
+                    }
+                  }
+            }
+            return layerPalette;
+        }
+
+
+        self.refreshTabs = function(){
+            console.log("Refreshing " + self.layers.length + " tabs");
+            tabhtml = "";
+            for(var i=0; i<self.layers.length; i++){
+                console.log("Setting up tag: " + self.layers[i].tabName);
+                var closebtn = "";
+                if (self.layers[i].layerType == "data"){
+                    closebtn = '<button class="tabclose" id="close-' + self.layers[i] + '" onclick="' + self.varName + '.closeTab(' + i + ')">x</button>';
+                }
+                tabhtml += '<button class="tablinks" id="' + self.layers[i].id + '" onclick="' + self.varName + '.openTab(' + i + ')">' + self.layers[i].tabName + closebtn + '</button>';
+            }
+            self.tabdiv.innerHTML = tabhtml;
+        }
+
+        self.closeTab = function(i){
+            console.log("Close tab clicked: " + i);
+            self.layers[i].layerObj.deleteThis();
+            self.layers.splice(i, 1);
+            self.doc.getElementById('layerCtls').innerHTML = "";
+            self.doc.getElementById("interface").innerHTML = "";
+            self.refreshTabs();
+            self.activeTab = 99;
+            if (self.layers.length > 0){
+                self.openTab(0);
+            }
+        }
+
+        self.openTabById = function(id){
+            var tabNo = 0;
+            for(var i=0; i<self.layers.length; i++){
+                if (self.layers[i].id == id){
+                    tabNo = i;
+                }
+            }
+            self.openTab(tabNo);
+        }
+
+        self.openTab = function(i){
+            console.log("Open tab clicked: " + i);
+            if (self.activeTab != i){
+                console.log("Setting up layers controls: " + self.layers[i].id);
+                lctl = self.doc.getElementById('layerCtls');
+                check = "";
+                if(self.layers[i].layerObj.visible){
+                    check = "checked";
+                }
+                lctl.innerHTML = '<input type="checkbox" id="layerVisible" name="layerVisible" value="layerVisible" oninput="' + self.varName + '.layerVisibleClicked(\''+ self.layers[i].id +'\')" ' + check + '>Visible</input>';
+                var lddCtl = self.layers[i].layerObj.outputControls(); // keyfunction
+                self.doc.getElementById("interface").innerHTML = lddCtl;
+                self.layers[i].layerObj.initControls(self.doc);
+                if (!self.layers[i].mapActive){
+                    self.layers[i].layerObj.getData();
+                    self.layers[i].mapActive = true;
+                }
+            }else{
+                console.log("We are already on this layer" + self.layers[i].id);
+            }
+            tablinks = self.doc.getElementsByClassName("tablinks");
+            tabclose = self.doc.getElementsByClassName("tabclose");
+            for (k = 0; k < tablinks.length; k++) {
+                tablinks[k].className = tablinks[k].className.replace(" active", "");
+                tabclose[k].className = tabclose[k].className.replace(" active", "");
+            }
+            tablinks[i].className += " active";
+            tabclose[i].className += " active";
+            self.activeTab = i;
+        }
+
+        self.layerVisibleClicked = function(id){
+            console.log("layer visible clicked - " + id + " should disappear");
+            var check = self.doc.getElementById("layerVisible").checked;
+            for(var i=0; i<self.layers.length; i++){
+                if (self.layers[i].id == id){
+                    self.layers[i].layerObj.setVisible(check);
+                }
+            }
+        }
+    }
+
+    function controlLayer (){
+
+
+        self.outputControls()
+/*      
+        val = "
+          <p>
+              <strong>Add map layer:</strong>
+              <select name="layerDropDown" id="layerDropdown">
+                  <option value="eshpa">Social Housing Planning Applications</option>
+                  <option value="borall_wm">One borough test - Westminster</option>
+                  <option value="borall_sw">One borough test - Southwark</option>
+                  <option value="allspace">Changes to open space</option>
+              </select>
+              <button type="button"  id="addLayer">+</button>
+          </p>
+        "
+        }
+*/
+    }
+
+    function focusPointer (L, map){
+        var self = this;
+        self.icon = L.icon({
+            iconUrl: 'images/pointer.png',
+            iconSize:     [43, 31], // size of the icon
+            iconAnchor:   [40, 29], // point of the icon which will correspond to marker's location
+            popupAnchor:  [21, 21] // point from which the popup should open relative to the iconAnchor
+        });
+        self.L = L;
+        self.map = map;
+        self.active = false;
+
+        self.refocus = function(lat, lon){
+            if (self.active){
+                self.remove(self.mark);
+            }else{
+                self.active = true;
+            }
+            self.add(lat, lon);
+        }
+
+        self.add = function(lat, lon){
+            self.mark = self.L.marker([lat, lon], {icon: self.icon}).addTo(self.map);
+        }
+
+        self.remove = function(){
+            self.map.removeLayer(self.mark);
+        }
+    }
+
+</script>
+</body>
+</html>
+
