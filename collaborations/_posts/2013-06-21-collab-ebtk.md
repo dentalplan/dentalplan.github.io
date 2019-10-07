@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: collab
 title: Everything But the Kitchen
 category: Collaborations
 author: Cliff Hammett
@@ -9,6 +9,7 @@ thumbimg: disp_ebtk.jpg
 thumbalt: Works from the Everything but the Kitchen exhibition at Harts Lane Studios
 headerimg: disp_ebtk.jpg
 headeralt: Works from the Everything but the Kitchen exhibition at Harts Lane Studios
+collabid: ebtk
 
 ---
 *Bleaching. Sucking. Feeding. Clocking. Scouring. Tuning.*

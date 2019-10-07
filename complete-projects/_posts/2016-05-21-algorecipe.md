@@ -8,6 +8,7 @@ excerpt: Betty Cipher's 'step-by-step' method to create culinary chaos. Part of 
 thumbimg: thumb_algorecipe.jpg
 thumbalt: still from algorecipe making videa 
 projectid: algorecipe
+relatedcollab: databuffet
 
 ---
 

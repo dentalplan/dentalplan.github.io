@@ -1,13 +1,14 @@
 ---
 layout: project
 title: Wearable cow aggregates
-category: Ongoing-Projects
+category: Complete-Projects
 author: Cliff Hammett
 
-excerpt: Reflecting on statistical data through bodily awkwardness 
+excerpt: Reflecting on statistical data through bodily awkwardness. Part of the 'Data Buffet' series.
 thumbimg: thumb_cowagg.jpg
 thumbalt: a wearable cow aggregate made out of milk bottles
 projectid: cowaggregates
+relatedcollab: databuffet
 
 ---
 

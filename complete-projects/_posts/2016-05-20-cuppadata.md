@@ -1,13 +1,14 @@
 ---
 layout: project
 title: Cuppa data
-category: Ongoing-Projects
+category: Complete-Projects
 author: Cliff Hammett
 
-excerpt: Reflecting on statistical data through bodily awkwardness 
+excerpt: Blending bodily data into tea. Part of the 'Data Buffet' series.
 thumbimg: thumb_cuppadata.jpg
 thumbalt: Galvanic skin response measuring cups and glove.
 projectid: cowaggregates
+relatedcollab: databuffet
 
 ---
 
@@ -16,7 +17,7 @@ projectid: cowaggregates
 ![The tea is blended](/resources/img/project_cuppadata2.jpg)
 
 
-Cuppa Data is an experiment in exploring  of
+Cuppa Data is an experiment in exploring
 data, by blending human and machine feelings using tea.
 
 Our actions and interactions with different technologies,

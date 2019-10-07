@@ -1,0 +1,85 @@
+---
+layout: default
+---
+<body id="{{ page.category }}-post">
+    
+    {% if page.headerimg and page.headerimg != "" %}
+       	<img src="/resources/img/{{ page.headerimg }}" alt="{{ page.headeralt }}" width=97%></a>
+    {% endif %}
+    
+    <article>
+	 <h1>{{ page.title }}</h1>
+       <div class="entry">
+        {{ content }}
+	</div>
+        <footer><!-- additional info --></footer>
+
+    </article>
+
+{% assign has_title = false %}
+{% for post in site.categories.ongoing-projects %}
+ 
+    {% if post.relatedcollab contains {{page.collabid}} %}
+         <h2>{{ page.title }} projects</h2>
+	{% assign has_title = true %}
+	{% break %}
+    {% endif %}
+{% endfor %}
+
+{% if has_title == false %}
+    {% for post in site.categories.complete-projects %}
+        {% if post.relatedcollab contains {{page.collabid}} %}
+             <h2>{{ page.title }} projects</h2>
+	     {% assign has_title = true %}
+	     {% break %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+ 
+   <!--  <div class='other-projects clearfix'> -->
+ 
+         {% for post in site.categories.ongoing-projects %}
+ 
+	   {% if post.relatedcollab contains {{page.collabid}} %}
+       <div class='content grid_20'>
+           <other-project class='other-project grid_18'>
+                <a href="{{ post.url }}">
+                     {% if post.thumbimg and post.thumbimg != "" %}
+                             <img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" >       
+                     {% else %}
+                             <table width = "200px" height = "170px"><tr><td>
+                                     {{ post.excerpt }}
+                             </td><tr></table>
+                     {% endif %}
+                     <strong>{{ post.title }}</strong>
+                     </br>{{ post.excerpt }}
+                </a>
+              </other-project>
+           {% endif %}
+         {% endfor %}
+         {% for post in site.categories.complete-projects %}
+ 
+	   {% if post.relatedcollab contains {{page.collabid}} %}
+           <other-project class='other-project grid_18'>
+                <a href="{{ post.url }}">
+                     {% if post.thumbimg and post.thumbimg != "" %}
+                             <img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" >       
+                     {% else %}
+                             <table width = "200px" height = "170px"><tr><td>
+                                     {{ post.excerpt }}
+                             </td><tr></table>
+                     {% endif %}
+                     <strong>{{ post.title }}</strong>
+                     </br>{{ post.excerpt }}
+                </a>
+  
+              </other-project>
+           {% endif %}
+         {% endfor %}
+ <!--    </div>  -->
+      </div>
+
+
+
+</body>

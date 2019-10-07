@@ -8,6 +8,7 @@ excerpt: Exploring our experiences of encountering bats
 thumbimg: thumb_batwalkmapping.jpg
 thumbalt: Diagram of tools used for bat walk mapping
 projectid: mappingbatwalks
+relatedcollab: nightsniffing
 
 ---
 ![Diagram of tools used for mapping](/resources/img/project_batwalkmapping1.jpg)

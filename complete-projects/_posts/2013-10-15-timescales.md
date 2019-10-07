@@ -8,6 +8,7 @@ projectid: timescales
 excerpt:  A set of experiments that explore time as a relationship between physical processes. 
 thumbimg: thumb_timescales.jpg
 thumbalt: Part of the Time Scales physical database
+relatedcollab: ebtk
 
 ---
 ![Timescales kitchen](/resources/img/project_timescales1.jpg)

@@ -8,7 +8,7 @@ excerpt: Revealing opaque systems of governance among hidden ecologies
 thumbimg: thumb_datasniffer.jpg
 thumbalt: Diagram of concept for datasniffer device
 projectid: lddatasniffer
-collabid: nightsniffing
+relatedcollab: nightsniffing
 
 ---
 ![Two datasniffers on display at Common Ground festival](/resources/img/project_datasniffer1.jpg)
