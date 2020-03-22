@@ -451,6 +451,35 @@ collab td,
 collab tr{
     vertical-align: middle;
 }
+/*partof elements begin*/
+partof{
+    display:block;
+    width:97%;
+}
+
+partof a,
+partof a:visited,
+partof a:active{
+    color: #1F231F;
+    background-color: none;
+    text-decoration: none;
+}
+
+
+partof a:hover{
+    color: #4a674a;
+}
+
+partof table{
+    background-color:inherit;
+    table-layout: fixed;
+}
+
+
+partof td,
+partof tr{
+    vertical-align: middle;
+}
 /*project elements*/
 
 project{
