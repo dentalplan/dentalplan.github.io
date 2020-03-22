@@ -16,22 +16,23 @@ layout: default
 
     </article>
 
-{% for col in site.categories.collab %}
+{% for col in site.categories.collaborations %}
     {% if col.collabid == page.relatedcollab %}
         <h2>Part of...</h2>
         <partof>
-           <a href="{{col.url}}"><img src="/resources/img/{{ col.thumbimg }}" alt="{{ col.alt }}" width=100%>
+          <a href="{{col.url}}">
            <table width=100%>
            <tr>
-                 <td width=40%>
+           <td width=70%>
+             <img src="/resources/img/{{ col.thumbimg }}" alt="{{ col.alt }}" width=100%>
+           </td>
+           <td width=30%>
              <h2>{{ col.title }}</h2>
-            </td>
-            <td width=60%>
-            <div class="entry">{{ col.excerpt }}</div>
-            </td>
-            </tr>
-            </table>
-            </a>
+             <div class="entry">{{ col.excerpt }}</div>
+           </td>
+           </tr>
+           </table>
+           </a>
         </partof>
     {% endif %}
 {% endfor}

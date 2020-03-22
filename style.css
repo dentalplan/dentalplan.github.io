@@ -478,7 +478,7 @@ partof table{
 
 partof td,
 partof tr{
-    vertical-align: middle;
+    vertical-align: top;
 }
 /*project elements*/
 
