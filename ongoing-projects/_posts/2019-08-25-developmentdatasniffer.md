@@ -6,13 +6,13 @@ author: Cliff Hammett
 
 excerpt: Revealing opaque systems of governance among hidden ecologies
 thumbimg: thumb_datasniffer.jpg
-thumbalt: Diagram of concept for datasniffer device
+thumbalt: Illustration datasniffer device
 projectid: lddatasniffer
 relatedcollab: nightsniffing
 
 ---
+![Illustration of datasniffer](/resources/img/project_datasniffer3.png)
 ![Two datasniffers on display at Common Ground festival](/resources/img/project_datasniffer1.jpg)
-![Prototype datansiffer in use on a bat walk in South London](/resources/img/project_datasniffer2.jpg)
 
 The London Development Datasniffer is a key outcome of Nightsniffing, a project examining the entanglement of bats, data systems and urban contestation. The datasniffer is a device to be taken on urban bat walks – dusk time wanderings searching for bats with ultrasound detectors. While bat detectors uncover hidden urban ecologies, the datasniffers reveal opaque and obscure data systems and decision making processes. 
 
