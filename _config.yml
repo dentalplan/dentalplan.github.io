@@ -35,6 +35,8 @@ category_dir: /cat/
 markdown: kramdown
 future: true
 
+paginate: 18
+
 # Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
 permalink: pretty
 
