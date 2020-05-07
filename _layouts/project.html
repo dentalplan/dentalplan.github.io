@@ -17,7 +17,7 @@ layout: default
     </article>
 
 {% for col in site.categories.collaborations %}
-    {% if col.collabid == page.relatedcollab %}
+    {% if page.relatedcollab and page.relatedcollab == col.collabid %}
         <h2>Part of...</h2>
         <partof>
           <a href="{{col.url}}">
