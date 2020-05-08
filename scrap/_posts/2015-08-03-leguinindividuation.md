@@ -4,7 +4,6 @@ title: The modes of Earth and Sky in Le Guin's 'Always Coming Home'
 category: Scrap
 author: Cliff Hammett
 
-relatedproject: heterodyning, nightsniffing
 thumbimg: thumb_sc_leguin.jpg
 thumbalt: the eye of a bear, from Ursula Le Guin's 'Always Coming Home'
 

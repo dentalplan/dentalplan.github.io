@@ -4,7 +4,6 @@ title: Bat detection walk with New Cross Commoners
 category: Scrap
 author: Cliff Hammett
 
-relatedproject: heterodyning, nightsniffing
 thumbimg: thumb_sc_newxbatwalk.jpg
 thumbalt: bat detecting in New Cross
 
