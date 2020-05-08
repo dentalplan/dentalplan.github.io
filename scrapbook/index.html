@@ -27,7 +27,7 @@ title: Scrapbook
 			</td><tr></table>
 		{% endif %}
         	<strong>{{ post.title }}</strong>
-            	</br><span class="date"><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span>
+            	</br><span class="date"><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%B %Y"}}</time></span>
 	   </a>
 
         </scrap>
@@ -46,7 +46,7 @@ title: Scrapbook
 	   </p>
 	   <p>
             <span class="date">
-		<time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time>
+		<time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %Y"}}</time>
 	    </span>
            </p>
         {% endfor %}

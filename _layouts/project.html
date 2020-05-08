@@ -42,6 +42,9 @@ layout: default
  
     {% if post.relatedproject contains {{page.projectid}} %}
          <h2>{{ page.title }} scrapbook</h2>
+      {% if page.scrapintro %}
+         <p>{{ page.scrapintro }}</p>
+      {% endif %}
 	{% assign has_title = true %}
 	{% break %}
     {% endif %}
