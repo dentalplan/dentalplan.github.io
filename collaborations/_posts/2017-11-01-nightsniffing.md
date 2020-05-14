@@ -10,6 +10,7 @@ thumbalt: diagram of Nightsniffing project
 headerimg: disp_nightsniffing.png
 headeralt: diagram of Nightsniffing project
 collabid: nightsniffing
+current: yes
 
 ---
 
