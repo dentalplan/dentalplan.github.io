@@ -118,8 +118,8 @@ table {
     border: none;
 }
 
-td {
-    padding-left: 20px;
+td{
+    padding-left: 0px;
     vertical-align: top;
 }
 
@@ -308,7 +308,7 @@ article h2>a:hover {
 
 article .entry {
     margin-left: 15px;
-    margin-right: 15px;
+    margin-right: 40px;
     padding: 5px;
 }
 
@@ -462,8 +462,11 @@ collab table{
     table-layout: fixed;
 }
 
+collab td{
+    padding-left: 20px;
+    vertical-align: middle;
+}
 
-collab td,
 collab tr{
     vertical-align: middle;
 }
@@ -473,6 +476,40 @@ partof{
     width:97%;
 }
 
+.more{
+    font-size: 10pt;
+    padding-right: 50px;
+    vertical-align: bottom;
+    text-align: right;
+}
+
+td .frontstage{
+    padding-left: 0px;
+    margin: 0px;
+    width: 50%;
+}
+
+td .front{
+    padding: 0px;
+    margin: 0px;
+    width:100%;
+    height: 160px;
+    background-position: center;
+}
+
+partof a .fronthead{
+    font-size:14pt;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+partof a .frontdescr{
+    margin: 0px; 
+    text-decoration: none;
+}
+
 partof a,
 partof a:visited,
 partof a:active{
@@ -480,7 +517,6 @@ partof a:active{
     background-color: none;
     text-decoration: none;
 }
-
 
 partof a:hover{
     color: #4a674a;
@@ -492,7 +528,10 @@ partof table{
 }
 
 
-partof td,
+partof td{
+    padding-left: 20px;
+    vertical-align: top;
+}
 partof tr{
     vertical-align: top;
 }

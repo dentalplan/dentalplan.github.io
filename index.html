@@ -5,9 +5,11 @@ title: Home
 
 <body id="home">
 
-<table>
+<!--<table>
    <tr>
-     <td width = 70%>
+     <td width = 70%>-->
+  <article>
+  <div class="entry">
 	<p>
         Cliff Hammett is a critical maker, a new media meddler and a technical tinkerer. His investigations take place at the 
         junctures between ecological, technical and social concerns. These experiments generate works and events that open up 
@@ -28,9 +30,32 @@ title: Home
         <a href="http://cliffhammett.com/collaborations/2017/11/01/nightsniffing/">Nightsniffing</a>, combines live walking events and bespoke 
         data devices to open up the relationship between bat ecology and the systems that underlie urban change and contestation.
     </p>
-     </td>
-     <td width = 180px>
-	<h3>Ongoing Projects</h3>
+  </div>
+  </article>
+    <table width=100% >
+    <tr> 
+    {% for col in site.categories.collaborations %}
+        {% if col.current %}
+            <td class="frontstage" width=50%> 
+              <h3>Current work</h3>
+              <partof>
+                <a href="{{col.url}}">
+                <table>
+                 <tr><td class='front' background="/resources/img/{{ col.thumbimg }}">
+  <!--                 <img src="/resources/img/{{ col.thumbimg }}" alt="{{ col.alt }}" width=100%>-->
+                 </td></tr>
+                 <tr><td class="front">
+                   <div class='fronthead'>{{ col.title }}</div>
+                   <div class='frontdescr'> {{ col.excerpt }}</div>
+                 </td></tr>
+                 </table>
+                 </a>
+              </partof>
+        {% endif %}
+    {% endfor %}
+           </td>
+  <td width=4px></td><td> 
+	<h3>Ongoing projects</h3>
 	{% for post in site.categories.['ongoing-projects'] limit : 2 %}
 	  <other-project class='other-projects grid_18'> 
             <a href="{{ post.url }}">
@@ -40,10 +65,13 @@ title: Home
             </a>
          </other-project>
 	{% endfor %}
-	<subfooter>
-		<a href="/projects">More</a>
-	</subfooter>
-     </td>
-    </tr>
-</table>
+	{% for post in site.categories.['ongoing-projects'] %}
+    {% if forloop.length > 2 %}  
+      {% assign more = true %}
+    {% endif %}
+  {% endfor %}
+  {% if more %}
+    <div class="more"><a href="/projects">more</a></div>
+  {% endif %}
+  </td></tr></table> 
 </body>
