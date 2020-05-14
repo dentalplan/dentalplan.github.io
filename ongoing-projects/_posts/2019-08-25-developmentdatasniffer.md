@@ -4,11 +4,12 @@ title: London Development Datasniffer
 category: Ongoing-Projects
 author: Cliff Hammett
 
-excerpt: Revealing opaque systems of governance among hidden ecologies
+excerpt: Revealing opaque systems of governance on your local bat walk
 thumbimg: thumb_datasniffer.jpg
 thumbalt: Illustration datasniffer device
 projectid: lddatasniffer
 relatedcollab: nightsniffing
+scrapintro: The datasniffer was developed over a period of three years. It started as a simple gadget to read out housesales while walking, and evolved through investigating new datasets and new ways of making sound.
 
 ---
 ![Illustration of datasniffer](/resources/img/project_datasniffer3.png)
