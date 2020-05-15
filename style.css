@@ -347,27 +347,21 @@ section {
 .scrapctl{
   width: 100%;
   display: inline-flex;
-  justify-content: space-between;
-  float: none;
+  gap: 8px;
+ 	color:#1F231F;
+  float: left;
+  font-size: 10pt;
   height: 30px;
+  margin: 10px;
 }
 
-.olderentries{
-  font-size: 10;
-  display: block;
-  color: #517969;
-  float:right;
-  margin-bottom: 4px;
-  margin-right: 40px;
+.scrapctl a:visited,
+.scrapctl a:active,
+.scrapctl a:hover,
+.scrapctl a{
+  text-decoration: none;
 }
 
-.newerentries{
-  display: block;
-  font-size: 10;
-  color: #517969;
-  float:left;
-  margin-bottom: 4px;
-}
 
 scrap{
 	display:block;
@@ -382,7 +376,7 @@ scrap{
 scrap a,
 scrap a:visited,
 scrap a:active{
-    	color:#1F231F;
+ 	color:#1F231F;
 	text-decoration: none;i
 	padding 2px;
 }
