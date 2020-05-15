@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Scrapbook
+title: Scrapbook page 2
 ---
 <body id="scrap">
 
@@ -10,16 +10,16 @@ title: Scrapbook
 		This is a place for things that don't fit but I'd like to share in some way shape or form. Dates
 		refer to when something roughly happened, rather than when something was written or posted.
 	</div>
-	</article>
-  <div class="scrapctl">
-    <div class="newerentries">newer entries</div>
-    <div class="olderentries"><a href="/scrapbook/2">older entries</a></div>
-  </div>
+  </article>
+<div class="scrapctl">
+  <div class="newerentries"><a href="/scrapbook/">newer entries</a></div>
+  <div class="olderentries">older entries</div>
+</div>
 <div class="indentedgrid">
 
   <!--  <div class='other-projects clearfix'> -->
 
-	{% for post in site.categories.scrap limit : 15 %}
+	{% for post in site.categories.scrap offset : 15 limit : 15 %}
 
  	<scrap class='scrap grid_18 spacedgrid'> 
 	   <a href="{{ post.url }}">
@@ -39,8 +39,8 @@ title: Scrapbook
         {% endfor %}
 
 </div>
-  <div class="scrapctl">
-    <div class="olderentries"><a href="/scrapbook/2">older entries</a></div>
-  </div>
+<div class="scrapctl">
+  <div class="newerentries"><a href="/scrapbook/">newer entries</a></div>
+</div>
 
 </body>

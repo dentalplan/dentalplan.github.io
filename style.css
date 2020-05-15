@@ -344,7 +344,30 @@ section {
 
 /* scrapbook elements */
 
+.scrapctl{
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  float: none;
+  height: 30px;
+}
 
+.olderentries{
+  font-size: 10;
+  display: block;
+  color: #517969;
+  float:right;
+  margin-bottom: 4px;
+  margin-right: 40px;
+}
+
+.newerentries{
+  display: block;
+  font-size: 10;
+  color: #517969;
+  float:left;
+  margin-bottom: 4px;
+}
 
 scrap{
 	display:block;
