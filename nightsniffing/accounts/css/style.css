@@ -1,0 +1,322 @@
+body{
+  color: white;
+  background-color: rgb(25,28,32);
+  background-image: url("img/BatwalkBG.png");
+}
+
+h1 {
+  font-family: Verdana, Helvetica, Arial, "Droid Sans", sans-serif; 
+  font-size: 18pt;
+  padding: none;
+}
+
+h2 {
+  font-family: Helvetica, Arial, "Liberations Sans", sans-serif; 
+  font-size: 14pt;
+  padding: none;
+}
+
+p {
+  font-family: Helvetica, Arial, "Liberations Sans", sans-serif; 
+  font-size: 11pt;
+}
+
+div {
+/*  display: inline; */
+  font-family: Helvetica, Arial, "Liberations Sans", sans-serif; 
+  font-size: 11pt;
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: 550px;
+}
+
+
+.guide {
+  font-size: 9pt;
+}
+
+.system{
+  color: green;
+}
+
+interface {
+  display: block;
+  font-size: 9pt;
+  float: right;
+/*  overflow-y: scroll;*/
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
+/*  background-color: rgb(240,240,240);*/
+  width: 30%;
+  height: 130px;
+}
+
+guide{
+  display: block;
+  float: left;
+  min-width: 30%;
+  width: 35%;
+}
+
+.guidetext{
+  font-size: 8pt;
+}
+
+quoteblock{
+  background-color: rgba(10, 5, 15, 0.4);
+  display: block;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 300px;
+  max-width: 750px;
+}
+
+.quote{
+  font-size: 12pt;
+  margin-left: 10px;
+}
+
+
+
+.key {
+  float: right;
+  margin: 2px;
+}
+
+.centralImg{
+  max-width:270px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@media only screen and (max-width: 845px) {
+    .centralImg {
+        display: none;
+    }
+    illus{
+      width: 45%;
+    }
+    interface{
+      width:45%;
+    }
+}
+
+.innerTab {
+  display: block;
+  font-size: 9pt;
+  float: top;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 6px;
+/*  background-color: rgb(240,240,240);*/
+  width: 90%;
+  height: 100px;
+}
+
+.innerTabScrollBox {
+  display: block;
+  float: left;
+  height: 100px;
+  width: 101%;
+  overflow-y: scroll;
+}
+
+interface th{
+  width: 9%;
+  font-size: 9pt;
+  text-align: right;
+  padding: 2px;
+}
+
+interface td{
+  width: 9%;
+  font-size: 8pt;
+  text-align: right;
+  padding: 2px;
+}
+
+input{
+  font-family: Helvetica, Arial, "Liberations Sans", sans-serif; 
+  color: white;
+}
+
+.shiContainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  background: url('../images/shiSlideIcon.png');
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 26px;
+  height: 26px;
+  border: 0;
+  background: url('../images/shiSlideIcon.png');
+  cursor: pointer;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 12px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.leaflet-tooltip.mapLabel {
+  font-family: Helvetica, Arial, "Liberations Sans", sans-serif; 
+  font-size: 7pt;
+  font-weight: bold;
+	position: absolute;
+	padding: 0px;
+	background-color: transparent;
+	border: 0px solid transparent;
+	border-radius: 3px;
+	color: white;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	box-shadow: 0 0px 0px transparent;
+	}
+
+.leaflet-tooltip.leaflet-clickable.mapLabel {
+	cursor: pointer;
+	pointer-events: auto;
+	}
+
+.leaflet-tooltip-top.mapLabel:before,
+.leaflet-tooltip-bottom.mapLabel:before,
+.leaflet-tooltip-left.mapLabel:before,
+.leaflet-tooltip-right.mapLabel:before {
+	position: absolute;
+	pointer-events: none;
+	border: 6px solid transparent;
+	background: transparent;
+	content: "";
+	}
+
+/* Directions */
+
+.leaflet-tooltip-bottom.mapLabel {
+	margin-top: 6px;
+}
+.leaflet-tooltip-top.mapLabel {
+	margin-top: -6px;
+}
+.leaflet-tooltip-bottom.mapLabel:before,
+.leaflet-tooltip-top.mapLabel:before {
+	left: 50%;
+	margin-left: -6px;
+	}
+
+.leaflet-tooltip-top.mapLabel:before {
+	bottom: 0;
+	margin-bottom: 0px;
+	border-top-color: transparent;
+	}
+
+.leaflet-tooltip-bottom.mapLabel:before {
+	top: 0;
+	margin-top: 0px;
+	margin-left: 0px;
+	border-bottom-color: transparent;
+	}
+
+.leaflet-tooltip-left.mapLabel {
+	margin-left: 0px;
+}
+
+.leaflet-tooltip-right.mapLabel {
+	margin-left: 0px;
+}
+
+.leaflet-tooltip-left.mapLabel:before,
+.leaflet-tooltip-right.mapLabel:before {
+	top: 0%;
+	margin-top: 0px;
+	}
+
+.leaflet-tooltip-left.mapLabel:before {
+	right: 0;
+	margin-right: 0px;
+	border-left-color: transparent;
+	}
+
+.leaflet-tooltip-right.mapLabel:before {
+	left: 0;
+	margin-left: 0px;
+	border-right-color: transparent;
+	}
+
+/* Create an active/current tablink class */
+.tab button.active {
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 4px;
+  border-top: none;
+}
+
+searchEntry {
+  display: block;
+  padding: 5px;
+  margin-bottom: 2px;
+}
+
+.seElement {
+  font-size: 8pt;
+}
+
+.seBtn{
+  float: right;
+  padding: 1px;
+  margin-top: 4px;
+}
