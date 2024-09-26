@@ -56,7 +56,7 @@ title: Home
            </td>
   <td width=4px></td><td> 
 	<h3>Ongoing projects</h3>
-	{% for post in site.categories.['ongoing-projects'] limit : 2 %}
+	{% for post in site.categories['ongoing-projects'] limit : 2 %}
 	  <other-project class='other-projects grid_18'> 
             <a href="{{ post.url }}">
                <img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" width=170px >  
@@ -65,7 +65,7 @@ title: Home
             </a>
          </other-project>
 	{% endfor %}
-	{% for post in site.categories.['ongoing-projects'] %}
+	{% for post in site.categories['ongoing-projects'] %}
     {% if forloop.length > 2 %}  
       {% assign more = true %}
     {% endif %}

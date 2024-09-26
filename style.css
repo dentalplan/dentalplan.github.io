@@ -201,7 +201,7 @@ nav {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-    	padding-left:0px;
+ 	padding-left:0px;
 }
 
 nav li {
@@ -218,8 +218,8 @@ nav a:active{
     font-size: 12pt;
     display:block;
     padding-top:4px;
-    padding-left:26px;
-    padding-right:26px;
+    padding-left:40px;
+    padding-right:40px;
     padding-bottom:4px;
     font-weight:bold;
     color: white;
@@ -347,10 +347,10 @@ section {
 .scrapctl{
   width: 100%;
   display: inline-flex;
-  gap: 8px;
  	color:#1F231F;
   float: left;
   font-size: 10pt;
+  gap: 10px;
   height: 30px;
   margin: 10px;
 }
