@@ -55,7 +55,8 @@ title: Home
     {% endfor %}
            </td>
   <td width=4px></td><td> 
-	<h3>Ongoing projects</h3>
+	<h3>Featured projects</h3>
+
 	{% for post in site.categories['ongoing-projects'] limit : 2 %}
 	  <other-project class='other-projects grid_18'> 
             <a href="{{ post.url }}">
