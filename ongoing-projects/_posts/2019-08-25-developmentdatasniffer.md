@@ -20,3 +20,5 @@ The London Development Datasniffer is a key outcome of Nightsniffing, a project 
 The device uses the London Development Database – a pan London dataset covering every major planning application for over a decade. This is available as open data, but using the dataset takes considerable expertise to unpack and understand. The datasniffer uses percussive noise making contraptions to sonify this difficult to understand data, revealing the presence of planning records at their actual locations, using audio frequencies that can be heard by humans, by bat detectors and by bats.
 
 By drawing on the ways that an unseen animal such as a bat is not just affected by development as a city dweller but entangled in the planning system itself, the datasniffer aims to stimulate a different conversation about the city, helping us consider the value we place on its different inhabitants and communities.
+
+<a href='https://nightsniffingphd.cliffhammett.com/iterations/datasniffer/'>Full documentation of the London Development Datasniffer</a>

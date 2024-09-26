@@ -28,5 +28,7 @@ who and what are cities are for, and how we might wish for them to function diff
 
 The project has three stages. The first is an investigation of bat walks and surveys using biomapping - using physiological sensors and recorded sound to elicit accounts of what people feel and experience while looking for bats. The second is to investigate systems that affect the built environment, attending to how the interest of bats and other beings and communities coincide and come into conflict. These will be combined in the final stage to create the novel electronic contraptions and methods of walking to bring together the concerns of different communities of living beings in the city with the systems that might care for, disrupt or harm them.
 
+Find oout more here:
 
-[Forthcoming walks](https://nightsniffing.eventbrite.com)
+* <a href='https://nightsniffingphd.cliffhammett.com'>Nightsniffing PhD website</a>
+* <a href='https://figshare.com/articles/thesis/Nightsniffing_figuring_bats_as_unruly_stakeholders_through_ambulatory_interfaces_with_urban_planning_data/23624187?file=41453286'>Nightsniffing PhD Thesis</a>
