@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nightnsiffing at Common Ground festival
+title: Nightsniffing at Common Ground festival
 category: Scrap
 author: Cliff Hammett
 
