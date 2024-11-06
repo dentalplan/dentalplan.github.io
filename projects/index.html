@@ -5,48 +5,34 @@ title: Projects
 <body id="project">
 
 <h2>Featured</h2>
-
-<div class="content grid_19">
-    <div class='projects clearfix'>
-        {% for post in site.categories.ongoing-projects %}
- 	<project class='projects grid_18'> 
-	<a href="{{ post.url }}">
- 	      <table width=360px height=160px>
-		<tr>
-		  <td width=170px>		 
-			<img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" >	
-		  </td>
-		  <td width=2px></td>	
-		  <td width=180px >
-        	    <h3>{{ post.title }}</h3>
-            	    <p>{{ post.excerpt }}</p>
-		  </td>
-		  <td width=2px></td>	
- 		</tr>
-               </table>
-	</a>
-        </project>
-        {% endfor %}
-    </div>
-</div>
+  <div class="featured-projects-box">
+    {% for post in site.categories.ongoing-projects %}
+    <a href="{{ post.url }}">
+      <div class="featured-project">
+          <img  src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" ></img>
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.excerpt }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
 
 <hr>
-
 <div class="content grid_20">
   <!--  <div class='other-projects clearfix'> -->
-        {% for post in site.categories.complete-projects %}
- 	<other-project class='other-projects grid_18'> 
-	{% if post.overrideurl and post.overrideurl != "" %}
-	   <a href="{{ post.overrideurl }}" target="_blank">
-        {% else %}
-	   <a href="{{ post.url }}">
-	{% endif %}
-			<img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" width=170px >	
-        	    <strong>{{ post.title }}</strong>
-            	    </br>{{ post.excerpt }}
- 
-	</a>
-        </other-project>
+  {% for post in site.categories.complete-projects %}
+ 	  
+    <div class='other-project'>
+       {% if post.overrideurl and post.overrideurl != "" %}
+       <a href="{{ post.overrideurl }}" target="_blank">
+          {% else %}
+       <a href="{{ post.url }}">
+       {% endif %}
+         <img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.thumbalt }}" width=170px >	
+         <h3>{{ post.title }}</h3>
+         <p>{{ post.excerpt }}</p>
+       </a>
+     </div>
         {% endfor %}
 <!--    </div>  -->
 </div>
