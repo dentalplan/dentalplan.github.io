@@ -9,18 +9,17 @@ title: Collaborations
 	<collab>
 
 	 
-	   <a href="{{post.url}}"><img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.alt }}" width=100%>
+	   <a href="{{post.url}}">
 
-	   <table width=100%>
-	   <tr>
-           <td width=40%>
-		   <h2>{{ post.title }}</h2>
-	    </td>
-	    <td width=60%>
-			<div class="entry">{{ post.excerpt }}</div>
-	    </td>
-	    </tr>
-	    </table>
+	   <div class='collab'> 
+         <img src="/resources/img/{{ post.thumbimg }}" alt="{{ post.alt }}" width=100%>
+		      <div class='collab-title-box'>
+              <h2>{{ post.title }}</h2>
+          </div>
+			    <div class="collab-excerpt-box">
+            {{ post.excerpt }}
+          </div>
+	    </div>
 	    </a>
 	</collab>
 	</br>

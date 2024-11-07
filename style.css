@@ -50,6 +50,53 @@ poem p.indent02{
     padding-left: 30px;
 }
 
+.collab{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 10pt;
+    font-family: Helvetica, Arial, SunSans-Regular, Sans-Serif;
+    background-color: #4a674a;
+}
+
+.collab:hover{
+    background-color: #1F231F;
+}
+
+
+.collab:hover img{
+    opacity: 0.8;
+}
+
+.collab-title-box{
+    width: 38%;
+    float: left;
+    padding: 2%;
+    padding-left: 2.5%;
+    padding-top: 3.5%;
+    padding-right: 1%;
+    height: 35px;
+}
+
+.collab-title-box h2{
+    font-size: 17pt;
+    vertical-align: middle;
+    display: inline;
+}
+
+.collab-excerpt-box{
+    width: 50%;
+    min-height: 40px;
+    float: left;
+    padding: 2%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    font-size: 11.5pt;
+    vertical-align: middle;
+}
+
 .featured-projects-box{
     display: flex;
     flex-wrap: wrap;
